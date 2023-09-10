@@ -13,7 +13,7 @@
 			<div class="row justify-content-sm-center h-100">
 				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
 					<div class="text-center my-5">
-						<img src="../../../../img/Loka 4.png" alt="logo" width="100">
+						<img src="../../../../img/logo-saloka.png" alt="logo" width="200">
 					</div>
 					<div class="card shadow-lg">
 						<div class="card-body p-5">
@@ -48,7 +48,7 @@
 						</div>
 					</div>
 					<div class="text-center mt-5 text-muted">
-						<p style="color: white;">Copyright 2023</p>
+						<p style="color: white;">Copyright © Saloka 2023</p>
 					</div>
 				</div>
 			</div>

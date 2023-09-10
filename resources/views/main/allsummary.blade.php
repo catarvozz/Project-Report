@@ -45,7 +45,7 @@
                             <tbody>
                              @foreach ($reportsummarys as $reportsummary)
                                 <tr>
-                                    <td>{{ $reportsummary->date }}</td>
+                                    <td>{{ $reportsummary->tanggal }}</td>
                                     <td>{{ $reportsummary->ticketing }}</td>
                                     <td>{{ $reportsummary->restoran_fnb }}</td>
                                     <td>{{ $reportsummary->retail }}</td>
@@ -64,6 +64,7 @@
                                     <td>{{ $reportsummary->komplemen_fnb }}</td>
                                     <td>{{ $reportsummary->komplemen_fa }}</td>
                                     <td>{{ $reportsummary->komplemen_hr }}</td>
+                                    <td>{{ $reportsummary->komplemen_ops }}</td>
                                     <td>{{ $reportsummary->komplemen_ir }}</td>
                                     <td>{{ $reportsummary->komplemen_marketing }}</td>
                                     <td>{{ $reportsummary->komplemen_sales }}</td>
@@ -81,7 +82,7 @@
                     <h6>TOTAL PENDAPATAN KATEGORI</h6>
                     <div class="card">
                         <div class="card-body table-responsive">
-                        <table id="tableresponsive" class="table table-striped" cellspacing="0" width="100%">
+                        <table class="table table-striped" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
                                     <th>KATEGORI</th>

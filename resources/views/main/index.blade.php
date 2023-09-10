@@ -3,8 +3,8 @@
 @section('container')
     <main class="content px-3 py-2">
         <div class="container-fluid">
-            <div class="mb-3">
-            <h2>Dashboard</h2>
+            <div>
+            <h1>Dashboard</h1>
             <p>Jumat, 18 Agustus 2023</p>
              <!-- content -->
             <div class="row">
@@ -65,41 +65,29 @@
                     <div class="card">
                     <!-- <h5 class="card-header">Latest Transaction</h5> -->
                         <div class="card-body table-responsive">
-                            <h5>Latest Transaction</h5>
-                            <table id="tableresponsive" class="table table-striped" cellspacing="0" width="100%">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">NO</th>
-                                        <th scope="col">AREA</th>
-                                        <th scope="col">CASH</th>
-                                        <th scope="col">EDC</th>
-                                        <th scope="col">TOTAL</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th>1</th>
-                                        <td>Apa</td>
-                                        <td>Apa</td>
-                                        <td>Apa</td>
-                                        <td>Apa</td>
-                                    </tr>
-                                    <tr>
-                                        <th>1</th>
-                                        <td>Apa</td>
-                                        <td>Apa</td>
-                                        <td>Apa</td>
-                                        <td>Apa</td>
-                                    </tr>
-                                    <tr>
-                                        <th>1</th>
-                                        <td>Apa</td>
-                                        <td>Apa</td>
-                                        <td>Apa</td>
-                                        <td>Apa</td>
-                                    </tr>
-                                </tbody>  
-                            </table>
+                            <h5>Top 10 Sales</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <p>Prima 600 ml</p>
+                                    <span class="badge bg-primary rounded-pill">100</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <p>Ice Cream</p>
+                                    <span class="badge bg-primary rounded-pill">50</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <p>Ayam Geprek</p>
+                                    <span class="badge bg-primary rounded-pill">25</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <p>Ayam Geprek</p>
+                                    <span class="badge bg-primary rounded-pill">12</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <p>Ayam Geprek</p>
+                                    <span class="badge bg-primary rounded-pill">9</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

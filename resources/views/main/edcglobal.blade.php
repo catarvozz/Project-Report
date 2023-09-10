@@ -10,7 +10,7 @@
                 <div class="container-fluid">
                     <div class="card">
                         <div class="card-body table-responsive">
-                            <table id="tableresponsive" class="table table-striped" cellspacing="0" width="100%">
+                            <table id="tableresponsive" class="table table-striped" width="100%">
                                 <thead>
                                     <tr>
                                         <th scope="col">NO</th>

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('all_summary', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('date', 255);
+            $table->date('tanggal', 255);
             $table->string('ticketing', 255);
             $table->string('restoran_fnb', 255);
             $table->string('retail', 255);

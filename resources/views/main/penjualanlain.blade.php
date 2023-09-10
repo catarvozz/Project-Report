@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <!-- table end -->
-                      <br>
+                    <br><br>
                       <h6>SETORAN PENJUALAN LAIN</h6>
                       <p>Kasir: Hafiz
                       <div class="card">
@@ -107,7 +107,7 @@
                     <!-- table end -->
                 </div>
                   <div>
-                    <a href="{{ route('forminsert') }}" class="">Buat Setoran</a>
+                    <a href="{{ route('forminsert') }}" class="btn btn-primary mt-3">Buat Setoran</a>
                   </div>
             </div>
         </div>

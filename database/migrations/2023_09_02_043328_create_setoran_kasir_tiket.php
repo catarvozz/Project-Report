@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('kasir_pc2', 255);
             $table->string('kasir_pc3', 255);
             $table->string('kasir_pc4', 255);
-            $table->string('jumlah_uang', 255);
+            $table->string('total_uang', 255);
             $table->timestamps();
         });
     }
