@@ -1,7 +1,7 @@
 @extends('layouts/main')
 
 @section('container')
-            <div class="container-fluid">
+        <div class="container-fluid">
             <h3>Form Edit Jumlah Setoran | Penyewaan</h3>
                 <div class="card">
                     <div class="card-body">

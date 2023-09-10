@@ -2,7 +2,7 @@
 
 @section('container')
             <div class="container-fluid">
-            <h3>Form Add Setoran | Penjalan Lain</h3>
+            <h3>Form Add Setoran | Penjualan Lain</h3>
                 <div class="card">
                     <div class="card-body">
                         <div class="row">

@@ -65,7 +65,7 @@
                     <div class="card">
                     <!-- <h5 class="card-header">Latest Transaction</h5> -->
                         <div class="card-body table-responsive">
-                            <h5>Top 10 Sales</h5>
+                            <h5>Top 5 Sales</h5>
                             <ul class="list-group">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                     <p>Prima 600 ml</p>
@@ -80,11 +80,11 @@
                                     <span class="badge bg-primary rounded-pill">25</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <p>Ayam Geprek</p>
+                                    <p>Ayam Kremes</p>
                                     <span class="badge bg-primary rounded-pill">12</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <p>Ayam Geprek</p>
+                                    <p>Ayam Balado</p>
                                     <span class="badge bg-primary rounded-pill">9</span>
                                 </li>
                             </ul>

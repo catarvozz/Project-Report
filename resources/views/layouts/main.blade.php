@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="icon" href="../../../../img/lokaprofpic.png" >
         <title>{{ $title }}</title>
 	    <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
@@ -32,6 +34,18 @@
                     </li>
             
                 <div class="small-screen navbar-display">
+                    <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+                        <a href="#homeSubmenu0" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa-solid fa-bell"></i><span>notification</span></a>
+                        <ul class="collapse list-unstyled menu" id="homeSubmenu0">
+                            <li>
+                                <a href="#">Notif 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Notif 2</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li  class="d-lg-none d-md-block d-xl-none d-sm-block">
                     <a href="#" class="sidebar-link">
                         <i class="fa-solid fa-user"></i>
@@ -122,11 +136,7 @@
 
                     <li class="">
                         <a href="{{ route('penjualanlain') }}">  <i class="fa-solid fa-shop"></i><span>Penjualan Lain</span></a>
-                    </li>
-
-                    <li class="">
-                        <a href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i><span>Log Out</span></a>
-                    </li>  
+                    </li> 
                 </ul>       
             </nav>
 
@@ -146,11 +156,33 @@
                         </button>
 
                         <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav ml-auto">   
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-user"></i>
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="dropdown nav-item">
+                                    <a href="#" class="nav-link" data-toggle="dropdown">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <span class="notification">4</span>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Notif 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Notif 1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item">
+                                    <a href="#" class="nav-link" data-toggle="dropdown">
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('login') }}">Log Out</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">

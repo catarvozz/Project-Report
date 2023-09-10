@@ -22,7 +22,7 @@ class penjualan_lainController extends Controller
 
     public function penjualanlaininsert()
     {
-        return view('forms.form_insert_setoran', [
+        return view('forms.form_insert_setoran_penjualanlain', [
             "title" => "Saloka Sales Report | Form Setoran Penjualan Lain",
         ]);
     }
@@ -83,7 +83,7 @@ class penjualan_lainController extends Controller
 
     public function penjualanlainedit(setoran_penjualanlain $reportsetoranpenjualanlain)
     {   
-            return view('forms.form_edit_setoran',[
+            return view('forms.form_edit_setoran_penjualanlain',[
                 "title" => "Saloka Sales Report | Form Edit Setoran",
             ],compact('reportsetoranpenjualanlain'));
     }

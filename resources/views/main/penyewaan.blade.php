@@ -93,7 +93,7 @@
                           <td>{{ $reportsetoranpenyewaan->nilai_uang }}</td>
                           <td>{{ $reportsetoranpenyewaan->jumlah }}</td>
                           <td>{{ $reportsetoranpenyewaan->keterangan }}</td>
-                          <td><a href="{{ route('penyewaanedit',$reportsetoranpenyewaan->id) }}" class="">Edit</a></td>
+                          <td><a href="{{ route('penyewaanedit',$reportsetoranpenyewaan->id) }}" class="btn btn-danger">Edit</a></td>
                     @endforeach
                         <tr>
                         <tr>

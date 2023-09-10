@@ -500,3 +500,38 @@ footer {
 tr #textcenter {
     text-align: center;
 }
+
+.navbar .notification {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: block;
+    font-size: 9px;
+    border: 0px;
+    font-size: 10px;
+    background: #d9534f;
+    min-width: 15px;
+    text-align: center;
+    padding: 1px 5px;
+    height: 15px;
+    border-radius: 2px;
+    line-height: 14px;
+}
+
+#navbarSupportedContent ul li a i {
+    position: relative;
+    margin-right: 10px;
+    top: 5px;
+	color: white;
+    margin-left: 10px;
+}
+
+.top-navbar ul li.active>a{
+    color: #333;
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+.top-navbar ul li a:hover{
+    color: #333;
+    background-color: rgba(200, 200, 200, 0.2);
+}
