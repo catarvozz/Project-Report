@@ -11,7 +11,7 @@ class menu_restoController extends Controller
     {
         $reportmenus = menu_restoran::simplePaginate(10);
         return view('main.menuresto', [
-            "title" => "Saloka Sales Report | Laporan Menu",
+            "title" => "Saloka Sales Report | Menu",
         ],compact('reportmenus'));
     }
 

@@ -19,6 +19,8 @@ use App\Http\Controllers\setoranController;
 use App\Http\Controllers\master_itemsController;
 use App\Http\Controllers\master_pecahanuangsController;
 use App\Http\Controllers\master_usersController;
+use App\Http\Controllers\userpasswordController;
+use App\Http\Controllers\userprofileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -91,4 +93,9 @@ Route::post('/penyewaan/penyewaanstore',['middleware' => 'guest',penyewaanContro
 Route::get('/penyewaan/penyewaanedit/{reportsetoranpenyewaan}',['middleware' => 'guest',penyewaanController::class, 'penyewaanedit'])->name('penyewaanedit');
 
 Route::post('/penyewaan/penyewaanupdate/{reportsetoranpenyewaan}',['middleware' => 'guest',penyewaanController::class, 'penyewaanupdate'])->name('penyewaanupdate');
+
+// profile
+Route::get('/userprofile',['middleware' => 'guest',userprofileController::class, 'userprofile'])->name('userprofile');
+
+Route::get('/userpassword',['middleware' => 'guest',userpasswordController::class, 'userpassword'])->name('userpassword');
 

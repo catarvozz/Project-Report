@@ -14,7 +14,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Ticket</p>
-                            <p class="card-text text-success">18.2% increase than yesterday</p>
+                            <small class="text-success">18.2% increase than yesterday</small>
                         </div>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Souvenir & FnB</p>
-                            <p class="card-text text-success">4.6% increase than yesterday</p>
+                            <small class="text-success">4.6% increase than yesterday</small>
                         </div>
                      </div>
                 </div>
@@ -34,7 +34,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Penyewaan</p>
-                            <p class="card-text text-danger">2.6% decrease than yesterday</p>
+                            <small class="text-danger">2.6% decrease than yesterday</small>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Penjualan Lain</p>
-                            <p class="card-text text-success">2.5% increase than yesterday</p>
+                            <small class="text-success">2.5% increase than yesterday</small>
                         </div>
                     </div>
                 </div>

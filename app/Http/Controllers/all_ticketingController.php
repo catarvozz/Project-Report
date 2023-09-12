@@ -24,7 +24,7 @@ class all_ticketingController extends Controller
             $reportticketings = all_ticketing::where('kasir','like', '%' . $request->kasir . '%')->simplePaginate(10);
         }
         return view('main.allticketing', [
-            "title" => "Saloka Sales Report | Laporan All Ticketing",
+            "title" => "Saloka Sales Report | All Ticketing Report",
         ],compact('reportticketings','reporttotaltipembayarans','reportsetorankasirtikets','number_total','number','selectedKasir'));
     }
     

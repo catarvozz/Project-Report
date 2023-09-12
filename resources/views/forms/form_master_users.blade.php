@@ -21,7 +21,7 @@
                     <div class="col-md-6">
                         <label class="form-label">Level Access</label>
                         <select id="inputAccess" class="form-select">
-                        <option selected>Choose...</option>
+                        <option selected>Pilih...</option>
                         <option>Level 1</option>
                         <option>Level 2</option>
                         <option>Level 3</option>

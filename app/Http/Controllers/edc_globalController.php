@@ -12,7 +12,7 @@ class edc_globalController extends Controller
         $reportedcs = edc_global::simplePaginate(10);
         $number = $reportedcs->firstItem();
         return view('main.edcglobal', [
-            "title" => "Saloka Sales Report | Laporan EDC Global",
+            "title" => "Saloka Sales Report | EDC Global Report",
         ],compact('reportedcs','number'));
     }
 }

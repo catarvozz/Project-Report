@@ -9,10 +9,10 @@ class all_globalController extends Controller
 {
     public function allglobal()
     {
-        $reportglobals = all_global::simplePaginate(20);
+        $reportglobals = all_global::simplePaginate(10);
         $number = $reportglobals->firstItem();
         return view('main.allglobal', [
-            "title" => "Saloka Sales Report | Laporan All Global",
+            "title" => "Saloka Sales Report | All Global Report",
 
         ],compact('reportglobals','number'));
     }

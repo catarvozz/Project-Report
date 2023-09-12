@@ -11,7 +11,7 @@ class setoranController extends Controller
     {
         $reportsetorans = setoran::simplePaginate(10);
         return view('main.setoran', [
-            "title" => "Saloka Sales Report | Laporan Setoran",
+            "title" => "Saloka Sales Report | Setoran Report",
         ],compact('reportsetorans'));
     }
 }

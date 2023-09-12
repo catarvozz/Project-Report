@@ -4,39 +4,9 @@
     <main class="content px-3 py-2">
       <div class="container-fluid">
         <div class="mb-3 mt-3">
-          <h4>LAPORAN PENYEWAAN</h4>
+          <h4>PENYEWAAN REPORT</h4>
           <p>Jumat, 18 Agustus 2023</p>
-          <!-- table start -->
-          <!-- <div class="container-fluid"> -->
-          <!-- card start -->
-          <!-- <div class="row my-3">
-                  <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Rp35.000.000</h5>
-                        <p class="card-text">Total Cash</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
-                    div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Rp35.000.000</h5>
-                        <p class="card-text">Total EDC</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Rp35.000.000</h5>
-                        <p class="card-text">Grand Total</p>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- card end -->
-                <!-- table start -->
+              <!-- table start -->
                 <div class="container-fluid">
                     <div class="card">
                         <div class="card-body table-responsive">

@@ -12,7 +12,7 @@ class all_irdeptsumController extends Controller
         $reportsumirdepts = all_irdeptsum::simplePaginate(10);
         $number = $reportsumirdepts->firstItem();
         return view('main.allirdeptsummary', [
-            "title" => "Saloka Sales Report | Laporan All IR Dept Summary",
+            "title" => "Saloka Sales Report | All IR Dept Summary Report",
         ],compact('reportsumirdepts','number'));
     }
 }

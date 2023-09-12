@@ -4,9 +4,9 @@
       <main class="content px-3 py-2">
           <div class="container-fluid">
               <div class="mb-3 mt-3">
-                  <h4>LAPORAN ALL TICKETING</h4>
+                  <h4>ALL TICKETING REPORT</h4>
                   <p>Jumat, 18 Agustus 2023</p>
-                      <div class="form mb-3">
+                      <div class="form mb-3" id="shadowform">
                         <form id="search-form">
                         <select name="kasir" class="form-select" id="select-form">
                             <option value="all" {{ $selectedKasir == "all" ? 'selected' : '' }}>Semua Kasir</option>
