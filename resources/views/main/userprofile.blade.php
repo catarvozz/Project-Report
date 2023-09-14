@@ -4,9 +4,7 @@
     <div class="container-fluid">
         <div class="mb-3 mt-3">
             <h3>Profile</h3>
-            <div class="icformprofile">
-                <i class="fa-solid fa-user"></i><br>
-            </div><br>
+            <img src="../../../../img/userprofpic.jpg" class="icformprofile"/>
             <div class="form-group">
                 <small>Nama</small>
                 <input type="text" name="oldpwd" value="Evydian Rosa Putri" class="form-control">

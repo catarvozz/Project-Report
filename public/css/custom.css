@@ -7,7 +7,7 @@
 
 body, html {
 	line-height: 1.8;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins';
      color: black;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
@@ -48,6 +48,10 @@ span {
 }
 
 small {
+    font-family: 'Poppins';
+}
+
+label {
     font-family: 'Poppins';
 }
 
@@ -295,6 +299,7 @@ a:focus {
     height: 15px;
     border-radius: 2px;
     line-height: 14px;
+    color: white;
 }
 
 
@@ -559,7 +564,6 @@ tr #textcenter {
 }
 
 .icformprofile {
-    background-color: #169870;
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -571,6 +575,20 @@ tr #textcenter {
 .icformprofile .fa-solid {
     font-size: 60px;
     color: white;
+}
+
+#textuser {
+    color:white;
+    font-size: 16px;
+}
+
+.topbarimg {
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #shadowform {

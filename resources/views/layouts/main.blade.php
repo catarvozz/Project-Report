@@ -50,7 +50,10 @@
                     </li>
                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
                         <a href="#menu1" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fa-solid fa-user"></i><span>profile</span></a>
+                        <div class="d-flex align-items-center">
+                            <img src="../../../../img/userprofpic.jpg" class="topbarimg" />
+                            <span class="ms-2">Magang'23</span>
+                        </div></a>
                         <div class="collapse list-unstyled menu" id="menu1">
                             <ul>
                                 <li>
@@ -199,7 +202,10 @@
                                 </li>
                                 <li class="dropdown nav-item">
                                     <a href="#" class="nav-link" data-toggle="dropdown">
-                                        <i class="fa-solid fa-user"></i>
+                                    <div class="d-flex align-items-center">
+                                        <img src="../../../../img/userprofpic.jpg" class="topbarimg" />
+                                        <span class="ms-2" id="textuser">Magang'23</span>
+                                    </div></a>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>
