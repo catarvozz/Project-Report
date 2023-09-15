@@ -59,9 +59,6 @@
                                 <li>
                                     <a href="{{ route('userprofile') }}">Profile</a>
                                 </li>
-                                <li>
-                                    <a href="{{ route('login') }}">Log Out</a>
-                                </li>
                             </ul>
                         </div>
                     </li>
@@ -151,20 +148,23 @@
                         </div>
                     </li>
                     
-                    <li class="">
+                    <li>
                         <a href="{{ route('allsummary') }}"><i class="fa-solid fa-border-all"></i><span>Summary</span></a>
                     </li>
                 
-                    <li class="">
+                    <li>
                         <a href="{{ route('souvenirfnb') }}"><i class="fa-solid fa-mug-hot"></i><span>Souvenir & FnB</span></a>
                     </li>
 
-                    <li class="">
+                    <li>
                         <a href="{{ route('penyewaan') }}"><i class="fa-solid fa-person-biking"></i><span>Penyewaan</span></a>
                     </li>
 
-                    <li class="">
-                        <a href="{{ route('penjualanlain') }}">  <i class="fa-solid fa-shop"></i><span>Penjualan Lain</span></a>
+                    <li>
+                        <a href="{{ route('penjualanlain') }}"><i class="fa-solid fa-shop"></i><span>Penjualan Lain</span></a>
+                    </li>
+                    <li class="hidelogout">
+                        <a href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i><span>Log Out</span></a>
                     </li>
                 </ul>       
             </nav>
@@ -189,14 +189,14 @@
                                 <li class="dropdown nav-item">
                                     <a href="#" class="nav-link" data-toggle="dropdown">
                                         <i class="fa-solid fa-bell"></i>
-                                        <span class="notification">4</span>
+                                        <span class="notification">2</span>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>
                                             <a href="#">Notif 1</a>
                                         </li>
                                         <li>
-                                            <a href="#">Notif 1</a>
+                                            <a href="#">Notif 2</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -210,9 +210,6 @@
                                     <ul class="dropdown-menu">
                                         <li>
                                             <a href="{{ route('userprofile') }}">Profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('login') }}">Log Out</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -228,6 +225,9 @@
                                             <a href="#">Setting 2</a>
                                         </li>
                                     </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i></a>
                                 </li>
                             </ul>
                         </div>

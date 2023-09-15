@@ -31,7 +31,7 @@ tr, td {
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
 	margin: 12px 0 0;
     font-family: 'Poppins';
 	/* line-height: 24px; */
@@ -41,6 +41,7 @@ a{
 	color: black;
 	font-weight: 400;
     font-family: 'Poppins';
+    font-size: 15px;
 }
 
 span {
@@ -133,7 +134,7 @@ a:focus {
 
 .sidebar-header h3{
 	color:#333;
-	font-size:17px;
+	font-size:16px;
 	margin:0px;
 	text-transform:uppercase;
 	transition:all 0.5s ease;
@@ -547,10 +548,10 @@ tr #textcenter {
 
 #navbarSupportedContent ul li a i {
     position: relative;
-    margin-right: 10px;
+    /* margin-right: 1px; */
     top: 5px;
 	color: white;
-    margin-left: 10px;
+    /* margin-left: 2px; */
 }
 
 .top-navbar ul li.active>a{
@@ -560,6 +561,7 @@ tr #textcenter {
 
 .top-navbar ul li a:hover{
     color: #333;
+    size: 20px;
     background-color: rgba(200, 200, 200, 0.2);
 }
 
@@ -595,3 +597,14 @@ tr #textcenter {
     box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
+
+/* menyembunyikan menu log out di sidebar ketika layar membesar */
+  @media (min-width: 992px) {
+    #sidebar li.hidelogout {
+      display: none;
+    }
+  }
+  
+  small .fa-solid {
+    font-size: 13px;
+  }

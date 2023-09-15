@@ -10,41 +10,37 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3 mb-4">
                     <div class="card">
-                        <!-- <h5 class="card-header">Ticket</h5> -->
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Ticket</p>
-                            <small class="text-success">18.2% increase than yesterday</small>
+                            <small class="text-success"><i class="fa-solid fa-arrow-up"></i> +18.2% than yesterday</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-4">
                     <div class="card">
-                        <!-- <h5 class="card-header">Souvenir & FnB</h5> -->
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Souvenir & FnB</p>
-                            <small class="text-success">4.6% increase than yesterday</small>
+                            <small class="text-success"><i class="fa-solid fa-arrow-up"></i> +5% than yesterday</small>
                         </div>
                      </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-4">
                     <div class="card">
-                        <!-- <h5 class="card-header">Penyewaan</h5> -->
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Penyewaan</p>
-                            <small class="text-danger">2.6% decrease than yesterday</small>
+                            <small class="text-danger"><i class="fa-solid fa-arrow-down"></i> -2.6% than yesterday</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
                     <div class="card">
-                    <!-- <h5 class="card-header">Penjualan Lain</h5> -->
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Penjualan Lain</p>
-                            <small class="text-success">2.5% increase than yesterday</small>
+                            <small class="text-success"><i class="fa-solid fa-arrow-up"></i> +2% than yesterday</small>
                         </div>
                     </div>
                 </div>
@@ -52,10 +48,9 @@
             <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-lg-0">
                     <div class="card">
-                    <!-- <h5 class="card-header">Traffic Ticket</h5> -->
                         <div class="card-body">
                             <h5>Traffic Ticket</h5>
-                            <canvas id="myChart" style="height: 300px; width: 100%;"></canvas>
+                            <canvas id="lineChart" style="height: 300px; width: 100%;"></canvas>
                         </div>
                             <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
                             <script src="../../../../js/chart.js"></script>
