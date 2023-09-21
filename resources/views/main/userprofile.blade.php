@@ -14,7 +14,7 @@
                 <input type="text" name="oldpwd" value="it.evydian" class="form-control" disabled>
             </div>
             <div class="form-group">
-                <small>Password</small> <small><a href="{{ route('userpassword') }}" class="btn btn-link">Change password</a></small>
+                <small>Password</small>
                 <input type="password" name="oldpwd" value="it.evydian" class="form-control" disabled>
             </div>
             <div>
