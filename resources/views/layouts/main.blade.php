@@ -182,13 +182,13 @@
                             <div class="collapse menu" id="menu6">
                                 <ul>
                                     <li>
-                                        <a href="{{ route('formmasterusers') }}">Add User</a>
+                                        <a href="{{ route('formmasterusers') }}">Users</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('formmasterpecahanuangs') }}">Add Pecahan Uang</a>
+                                        <a href="{{ route('formmasterpecahanuangs') }}">Pecahan Uang</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('formmasteritems') }}">Add Item</a>
+                                        <a href="{{ route('formmasteritems') }}">Items</a>
                                     </li>
                                 </ul>
                             </div>

@@ -608,3 +608,11 @@ tr #textcenter {
   small .fa-solid {
     font-size: 13px;
   }
+
+  .btn-success {
+    background-color: #169870;
+  }
+
+  .btn-warning {
+    background-color: #F39F19;
+  }

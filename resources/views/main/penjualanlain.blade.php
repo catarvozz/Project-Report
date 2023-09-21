@@ -46,10 +46,16 @@
                     <!-- table end -->
                     <br><br>
                       <h6>SETORAN PENJUALAN LAIN</h6>
-                      <p>Kasir: Hafiz
+                      <div class="row">
+                      <!-- input nama kasir -->
+                      <label class="col-sm-1">Kasir:</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="staticEmail" value="Hafiz">
+                      </div>
+                    </div>
                       <div class="card">
                         <div class="card-body table-responsive">
-                          <table class="table table-striped">
+                          <table class="table table-hover">
                             <thead>
                                 <tr>
                                   <th scope="col">Uang Setoran</th>
@@ -59,17 +65,30 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach ($reportsetoranpenjualanlains as $reportsetoranpenjualanlain)
+                              <form action="">
                                 <tr>
-                                  <td>{{ $reportsetoranpenjualanlain->nilai_uang }}</td>
-                                  <td>{{ $reportsetoranpenjualanlain->jumlah }}</td>
-                                  <td>{{ $reportsetoranpenjualanlain->keterangan }}</td>
-                                  <td><a href="{{ route('penjualanlainedit',$reportsetoranpenjualanlain->id) }}" class="btn btn-danger">Edit</a></td>
-                            @endforeach
-                                <tr>
-                                  <th colspan="3">Total</th>
-                                  <th>2000000</th>
-                                </tr> 
+                                    <td>100000</td>
+                                    <td><input type="text" class="form-control col-3" id="100000"></td>
+                                    <td>Kertas</td>
+                                    <td><a href="#" class="btn btn-warning text-white"><i class="fa-solid fa-trash-can"></i></a></td>
+                                  <tr>
+                                  <tr>
+                                    <td>75000</td>
+                                    <td><input type="text" class="form-control col-3" id="100000"></td>
+                                    <td>Kertas</td>
+                                    <td><a href="#" class="btn btn-warning text-white"><i class="fa-solid fa-trash-can"></i></a></td>
+                                  <tr>
+                                  <tr>
+                                    <td>50000</td>
+                                    <td><input type="text" class="form-control col-3" id="100000"></td>
+                                    <td>Kertas</td>
+                                    <td><a href="#" class="btn btn-warning text-white"><i class="fa-solid fa-trash-can"></i></a></td>
+                                  <tr>
+                                  <tr>
+                                    <th colspan="3">Total</th>
+                                    <th>2000000</th>
+                                  </tr> 
+                                </form>
                               </tbody>
                           </table>
                         </div>
@@ -77,7 +96,7 @@
                     <!-- table end -->
                 </div>
                   <div>
-                    <a href="{{ route('forminsert') }}" class="btn btn-primary mt-3">Buat Setoran</a>
+                    <a href="{{ route('forminsert') }}" class="btn btn-success mt-3 mr-3 float-right">Buat Setoran</a>
                   </div>
             </div>
         </div>

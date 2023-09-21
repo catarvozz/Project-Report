@@ -19,7 +19,7 @@
                       </div>
                       <div class="card">
                         <div class="card-body table-responsive">
-                        <table class="table table-striped" cellspacing="0" width="100%">
+                        <table class="table table-hover" cellspacing="0" width="100%">
                           <thead>
                               <tr>
                                 <th>NO</th>
@@ -52,36 +52,51 @@
                         <br><br>
                         <h6>TOTAL PENDAPATAN KATEGORI</h6>
                         <div class="card">
-                          <div class="card-body table-responsive">
-                              <table class="table table-striped" cellspacing="0" width="100%">
-                                <thead>
-                                    <tr>
-                                        <th>NO</th>
-                                        <th>KATEGORI</th>
-                                        <th>TOTAL PENDAPATAN</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                @foreach ($reporttotaltipembayarans as $reporttotaltipembayaran)
-                                    <tr>
-                                    <th>{{ $number_total++ }}</th>
-                                    <td>{{ $reporttotaltipembayaran->tipe_pembayaran }}</td>
-                                    <td>{{ $reporttotaltipembayaran->total_pendapatan }}</td>
-                                    </tr>
-                                @endforeach 
-                                </tbody> 
-                              </table>
+                          <div class="float-left">
+                            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
                           </div>
-                        </div>
+                          <div class="float-right">
+                            <div class="input-group">
+                                <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                                <button type="button" class="btn btn-outline-success">Search</button>
+                            </div>
+                          </div>
+
+                          <div class="card-body table-responsive">
+                          <table class="table table-hover table responsive">
+                              <thead>
+                                  <th>NO</th>
+                                  <th>KATEGORI</th>
+                                  <th>TOTAL PENDAPATAN</th>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>test</td>
+                                      <td>test</td>
+                                      <td>test</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                          </div>
+                          </div>
                         <!-- table start -->
                         <br><br>
                         <h6>SETORAN KASIR</h6>
                           <div class="card">
+                          <div class="float-left">
+                            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                          </div>
+                          <div class="float-right">
+                            <div class="input-group">
+                                <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                                <button type="button" class="btn btn-outline-success">Search</button>
+                            </div>
+                          </div>
                             <div class="card-body table-responsive">
-                              <table class="table table-striped" id="textthead">
+                              <table class="table table-hover" id="textthead">
                                 <thead>
                                     <tr id="textcenter">
-                                      <th style="text-align: center" scope="col">UANG SETORAN</th>
+                                      <th style="text-align: center" scope="col">UANG</th>
                                       <th style="text-align: center" scope="col" colspan="5">JUMLAH</th>
                                     </tr>
                                     <tr>
@@ -94,16 +109,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                  @foreach ($reportsetorankasirtikets as $reportsetorankasirtiket)
                                     <tr>
-                                      <td>{{ $reportsetorankasirtiket->nilai_uang }}</td>
-                                      <td>{{ $reportsetorankasirtiket->kasir_pc1 }}</td>
-                                      <td>{{ $reportsetorankasirtiket->kasir_pc2 }}</td>
-                                      <td>{{ $reportsetorankasirtiket->kasir_pc3 }}</td>
-                                      <td>{{ $reportsetorankasirtiket->kasir_pc4 }}</td>
-                                      <td>{{ $reportsetorankasirtiket->total_uang }}</td>
+                                      <td>100000</td>
+                                      <td><input type="text" class="form-control col-3" id="pc1"></td>
+                                      <td><input type="text" class="form-control col-3" id="pc2"></td>
+                                      <td><input type="text" class="form-control col-3" id="pc3"></td>
+                                      <td><input type="text" class="form-control col-3" id="pc4"></td>
+                                      <td><input type="text" class="form-control col-3" id="total"></td>
                                     </tr>
-                                    @endforeach 
                                     <tr>
                                       <th>Grand Total</th>
                                       <th>2000000</th>

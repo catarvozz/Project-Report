@@ -1,15 +1,16 @@
 @extends('layouts/main')
 
 @section('container')
-<main class="content px-3 py-2">
+<!-- tabel master -->
+<!-- <main class="content px-3 py-2">
     <div class="container-fluid">
-    <h3>Master Items</h3>
+    <h3>Master Item</h3>
         <div class="card">
         <div class="float-right">
         <div class="input-group">
-            <button type="button" class="btn btn-primary mr-3 rounded">Add item</button>
+            <button type="button" class="btn btn-success mr-3 rounded">Add item</button>
             <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-            <button type="button" class="btn btn-outline-primary">Search</button>
+            <button type="button" class="btn btn-outline-success">Search</button>
         </div>
         </div>
 
@@ -26,6 +27,7 @@
                 <th>HPP COGS</th>
                 <th>HPP KONSI</th>
                 <th>HPP BAGI HASIL</th>
+                <th>ACTION</th>
             </thead>
             <tbody>
                 <tr>
@@ -39,48 +41,84 @@
                     <td>test</td>
                     <td>test</td>
                     <td>test</td>
+                    <td>
+                    <button type="button" class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></button>
+                    <button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></button>    
+                    </td>
                 </tr>
             </tbody>
         </table>
         </div>
         </div>
+        
+        <a href="your_url_here">
+            <div class="card" style="width: 100%; height: 65px; border-radius: 10px; background-color: #169870; color:#ffff">
+                <h4 style="float: left; margin: 5px;">Add new item</h4>
+                <i class="fa-solid fa-angle-right mr-2 mt-2" style="float: right; font-size:30px"></i>
+               
+            </div>
+        </a>
     </div>
-</main>
-    <!-- <div class="container-fluid">
-        <br><h3>Form Master Items</h3>
+</main> -->
+
+    <div class="container-fluid">
+        <br><h3>Form Master Item</h3>
             <div class="card">
                 <div class="card-body">
-                <form class="row g-3">
-                    <div class="col-md-6">
-                        <labelc class="form-label">Nama Item</label>
-                        <input type="text" class="form-control" id="inputNama">
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label">Harga</label>
-                        <input type="text" class="form-control" id="inputHarga">
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label">Jenis</label>
-                        <select id="" class="form-select">
-                        <option selected>Pilih...</option>
-                        <option>Retail</option>
-                        <option>FnB</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label">Store</label>
-                        <select id="" class="form-select">
-                        <option selected>Pilih...</option>
-                        <option>Rimba</option>
-                        <option>Daimami</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Create</button>
-                    </div>
-                    </form>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                        <!-- Kolom kiri dengan 5 input -->
+                        <div class="form-group">
+                            <label for="iditem">ID Item</label>
+                            <input type="text" class="form-control" id="iditem" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="itemmenu">Item Menu</label>
+                            <input type="text" class="form-control" id="itemmenu" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="kategori">Kategori</label>
+                            <input type="text" class="form-control" id="kategori" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="subkategori">Sub Kategori</label>
+                            <input type="text" class="form-control" id="subkategori" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="mfg">MFG</label>
+                            <input type="text" class="form-control" id="mfg" placeholder="">
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <!-- Kolom kanan dengan 5 input -->
+                        <div class="form-group">
+                            <label for="section">Section</label>
+                            <input type="text" class="form-control" id="section" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="hargajual">Harga Jual</label>
+                            <input type="text" class="form-control" id="hargajual" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="hppcogs">HPP COGS</label>
+                            <input type="text" class="form-control" id="hppcogs" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="hppkonsi">HPP Konsi</label>
+                            <input type="text" class="form-control" id="hppkonsi" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="hppbagihasil">HPP Bagi Hasil</label>
+                            <input type="text" class="form-control" id="hppbagihasil" placeholder="">
+                        </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-outline-success">Create</button>
+                        </div>
                     </div>
                 </div>
+                </div>
             </div>
-        </div> -->
+        </div>
 @endsection
