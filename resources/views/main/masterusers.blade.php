@@ -10,12 +10,12 @@
             <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
         </div>
         <div class="float-right">
-        <div class="input-group">
-            <a href="{{ route('formmasterusers') }}" class="btn btn-success mr-3 rounded">Add user</a>
-            <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-            <button type="button" class="btn btn-outline-success">Search</button>
-        </div>
-        </div>
+            <div class="input-group">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                <button type="button" class="btn btn-outline-success mr-3 rounded">Search</button>
+                <a href="{{ route('formmasterusers') }}" class="btn btn-success mr-3 rounded"><i class="fa-solid fa-plus"></i></a>  
+            </div>
+        </div>        
 
         <div class="card-body table-responsive">
         <table class="table table-hover table responsive">

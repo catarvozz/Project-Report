@@ -10,7 +10,7 @@
                         <div class="form mb-3" id="shadowform">
                             <form id="search-form">
                                 <select name="store" class="form-select" id="select-form">
-                                    <option value="all" {{ $selectedStore == "all" ? 'selected' : '' }}>Penjualan Semua Store</option>
+                                    <option value="all" {{ $selectedStore == "all" ? 'selected' : '' }}>Choose...</option>
                                     <option value="VW Long FnB" {{ $selectedStore == "VW Long FnB" ? 'selected' : '' }}>VW Long FnB</option>
                                     <option value="Foodrsuck Ararya Kingdom" {{ $selectedStore == "Foodrsuck Ararya Kingdom" ? 'selected' : '' }}>Foodrsuck Ararya Kingdom</option>
                                     <option value="Daimami" {{ $selectedStore == "Daimami" ? 'selected' : '' }}>Daimami</option>
@@ -34,7 +34,6 @@
                                     </div>
                                 <div class="float-right">
                                     <div class="input-group">
-                                        <button type="button" class="btn btn-success mr-3 rounded">Add item</button>
                                         <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
                                         <button type="button" class="btn btn-outline-success">Search</button>
                                     </div>
@@ -50,8 +49,6 @@
                                                 <th scope="col">JUMLAH PENJUALAN</th>
                                                 <th scope="col">TOTAL</th>
                                                 <th scope="col">STORE</th>
-                                                <th scope="col">MENU</th>
-                                                <th scope="col">SETORAN</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -64,27 +61,113 @@
                                                 <td>{{ $reportsouvenirfnb->jumlah_penjualan}}</td>
                                                 <td>{{ $reportsouvenirfnb->total }}</td>
                                                 <td>{{ $reportsouvenirfnb->store }}</td>
-                                                <td><a href="{{ $reportsouvenirfnb->menu }}" class="btn btn-link">Menu</a></td>
-                                                <td><a href="{{ $reportsouvenirfnb->setoran }}" class="btn btn-link">Setoran</a></td>
                                             </tr>
                                         @endforeach 
                                         </tbody>
                                             <tr>
-                                                <th colspan="8">Total Cash</th>
+                                                <th colspan="5">Total Cash</th>
                                                 <th>2000000</th>
                                             <tr>
-                                                <th colspan="8">Total EDC</th>
+                                                <th colspan="5">Total EDC</th>
                                                 <th>2000000</th>
                                             </tr> 
                                             <tr>
-                                                <th colspan="8">Grand Total</th>
+                                                <th colspan="5">Grand Total</th>
                                                 <th>2000000</th>
                                             </tr> 
                                     </table>
                                 </div>
                             </div>
                             <!-- table end -->
-                            <br>
+                            <br><br>
+                            <h4>MENU</h4>
+                                <div class="card">
+                                <div class="float-left">
+                                    <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                                    </div>
+                                    <div class="card-body table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">PRODUCT CODE</th>
+                                            <th scope="col">PRODUCT NAME</th>
+                                            <th scope="col">COST(Rp)</th>
+                                            <th scope="col">PRICE(Rp)</th>
+                                            <th scope="col">QUANTITY</th>
+                                            <th scope="col">SUBTOTAL(Rp)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <form action="">
+                                            <tr>
+                                                <td>test</td>
+                                                <td>test</td>
+                                                <td>test</td>
+                                                <td>test</td>
+                                                <td>test</td>
+                                                <td>test</td>
+                                            <tr>
+                                            </form>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <h4>SETORAN</h4>
+                            <div class="row">
+                                <label class="col-sm-1">Kasir:</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="staticEmail" value="Hafiz">
+                                </div>
+                                </div>
+                                <div class="card">
+                                <div class="float-left">
+                                    <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                                    </div>
+                                    <div class="card-body table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">Uang Setoran</th>
+                                            <th scope="col">Jumlah</th>
+                                            <th scope="col">Keterangan</th>
+                                            <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <form action="">
+                                            <tr>
+                                                <td>100000</td>
+                                                <td><input type="text" class="form-control col-3" id="100000"></td>
+                                                <td>Kertas</td>
+                                                <td><a href="#" class="btn btn-warning text-white"><i class="fa-solid fa-trash-can"></i></a></td>
+                                            <tr>
+                                            <tr>
+                                                <td>75000</td>
+                                                <td><input type="text" class="form-control col-3" id="100000"></td>
+                                                <td>Kertas</td>
+                                                <td><a href="#" class="btn btn-warning text-white"><i class="fa-solid fa-trash-can"></i></a></td>
+                                            <tr>
+                                            <tr>
+                                                <td>50000</td>
+                                                <td><input type="text" class="form-control col-3" id="100000"></td>
+                                                <td>Kertas</td>
+                                                <td><a href="#" class="btn btn-warning text-white"><i class="fa-solid fa-trash-can"></i></a></td>
+                                            <tr>
+                                            <tr>
+                                                <th colspan="3">Total</th>
+                                                <th>2000000</th>
+                                            </tr> 
+                                            </form>
+                                        </tbody>
+                                    </table>
+                                    <div>
+                                        <a href="{{ route('forminsert') }}" class="btn btn-success mt-3 mr-3 float-right">Submit</a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

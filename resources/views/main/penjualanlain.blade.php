@@ -8,14 +8,14 @@
                 <p>Jumat, 18 Agustus 2023</p>
                 <div class="container-fluid">
                     <div class="card">
-                      <div class="float-left">
-                          <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                    <div class="float-left">
+                            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
                         </div>
                         <div class="float-right">
                             <div class="input-group">
-                                <button type="button" class="btn btn-success mr-3 rounded">Add item</button>
-                                <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-                                <button type="button" class="btn btn-outline-success">Search</button>
+                                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                                <button type="button" class="btn btn-outline-success mr-3 rounded">Search</button>
+                                <button type="button" class="btn btn-success mr-3 rounded"><i class="fa-solid fa-plus"></i></button>  
                             </div>
                         </div>
                         <div class="card-body table-responsive">

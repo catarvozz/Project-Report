@@ -12,13 +12,12 @@
                             <div class="float-left">
                                 <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
                             </div>
-                        <div class="float-right">
-                            <div class="input-group">
-                                <button type="button" class="btn btn-success mr-3 rounded">Add item</button>
-                                <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-                                <button type="button" class="btn btn-outline-success">Search</button>
+                            <div class="float-right">
+                                <div class="input-group">
+                                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                                    <button type="button" class="btn btn-outline-success mr-3 rounded">Search</button>
+                                </div>
                             </div>
-                        </div>
                             <div class="card-body table-responsive">
                                 <table id="" class="table table-hover" cellspacing="0" width="100%">
                                     <thead>

@@ -59,7 +59,7 @@
                           </div>
                         </div>
                         <br><br>
-                        <h6>TOTAL PENDAPATAN KATEGORI</h6>
+                        <h4>TOTAL PENDAPATAN KATEGORI</h4>
                         <div class="card">
                           <div class="float-left">
                             <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
@@ -90,7 +90,7 @@
                           </div>
                         <!-- table start -->
                         <br><br>
-                        <h6>SETORAN KASIR</h6>
+                        <h4>SETORAN TICKET</h4>
                           <div class="card">
                           <div class="float-left">
                             <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>

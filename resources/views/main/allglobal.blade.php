@@ -14,7 +14,6 @@
                     </div>
                     <div class="float-right">
                         <div class="input-group">
-                            <button type="button" class="btn btn-success mr-3 rounded">Add item</button>
                             <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
                             <button type="button" class="btn btn-outline-success">Search</button>
                         </div>
