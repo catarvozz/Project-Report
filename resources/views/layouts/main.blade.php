@@ -157,20 +157,12 @@
                                         </li>
                                     </li>
 
-                                    <li class="dropdown">
-                                            <a href="#submenu4" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                            Rincian Uang >></a>
-                                            <div class="collapse submenu" id="submenu4">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Menu1</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Menu2</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
+                                    <li>
+                                        <a href="{{ route('rincianuang') }}">Rincian Uang</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('allsummary') }}">All Summary</a>
+                                    </li>
                                     </li>
                                 </ul>
                             </div>

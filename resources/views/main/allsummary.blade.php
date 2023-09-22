@@ -9,8 +9,17 @@
                 <!-- table start -->
                 <div class="container-fluid">
                     <div class="card">
+                        <div class="float-left">
+                            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                        </div>
+                        <div class="float-right">
+                            <div class="input-group">
+                                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                                <button type="button" class="btn btn-outline-success mr-3 rounded">Search</button> 
+                            </div>
+                        </div>
                         <div class="card-body table-responsive">
-                        <table id="tableresponsive" class="table table-striped" cellspacing="0" width="100%">
+                        <table id="" class="table table-hover" cellspacing="0" width="100%">
                             <thead>
                                 <tr class="floating-text">
                                     <th>DATE</th>
@@ -78,11 +87,11 @@
                         </table>
                         </div>
                     </div>
-                    <br>
-                    <h6>TOTAL PENDAPATAN KATEGORI</h6>
+                    <br><br>
+                    <h4>TOTAL PENDAPATAN KATEGORI</h4>
                     <div class="card">
                         <div class="card-body table-responsive">
-                        <table class="table table-striped" cellspacing="0" width="100%">
+                        <table class="table table-hover" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
                                     <th>KATEGORI</th>

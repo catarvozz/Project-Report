@@ -82,19 +82,28 @@
                                     <td>100000</td>
                                     <td><input type="text" class="form-control col-3" id="100000"></td>
                                     <td>Kertas</td>
-                                    <td><a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a></td>
+                                    <td>
+                                      <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
+                                      <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
+                                    </td>
                                   <tr>
                                   <tr>
                                     <td>75000</td>
                                     <td><input type="text" class="form-control col-3" id="100000"></td>
                                     <td>Kertas</td>
-                                    <td><a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a></td>
+                                    <td>
+                                      <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
+                                      <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
+                                    </td>
                                   <tr>
                                   <tr>
                                     <td>50000</td>
                                     <td><input type="text" class="form-control col-3" id="100000"></td>
                                     <td>Kertas</td>
-                                    <td><a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a></td>
+                                    <td>
+                                      <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
+                                      <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
+                                    </td>
                                   <tr>
                                   <tr>
                                     <th colspan="3">Total</th>

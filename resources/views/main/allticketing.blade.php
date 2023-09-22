@@ -64,12 +64,6 @@
                           <div class="float-left">
                             <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
                           </div>
-                          <div class="float-right">
-                            <div class="input-group">
-                                <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-                                <button type="button" class="btn btn-outline-success">Search</button>
-                            </div>
-                          </div>
 
                           <div class="card-body table-responsive">
                           <table class="table table-hover table responsive">
@@ -92,33 +86,42 @@
                         <br><br>
                         <h4>SETORAN TICKET</h4>
                           <div class="card">
+                          <div class="float-left">
+                            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                          </div>
                             <div class="card-body table-responsive">
                               <table class="table table-hover" id="textthead">
                                 <thead>
                                     <tr id="textcenter">
-                                      <th style="text-align: center" scope="col">SETORAN UANG</th>
-                                      <th style="text-align: center" scope="col" colspan="6">JUMLAH</th>
+                                      <th style="text-align: center">SETORAN UANG</th>
+                                      <th style="text-align: center" colspan="5">JUMLAH</th>
+                                      <th></th>
+                                      <th></th>
                                     </tr>
                                     <tr>
-                                      <th scope="col"></th>
-                                      <th scope="col"><input type="text" class="form-control col-6" id="pc1" placeholder="kasir1"></th>
-                                      <th scope="col"><input type="text" class="form-control col-6" id="pc1" placeholder="kasir2"></th>
-                                      <th scope="col"><input type="text" class="form-control col-6" id="pc1" placeholder="kasir3"></th>
-                                      <th scope="col"><input type="text" class="form-control col-6" id="pc1" placeholder="kasir4"></th>
-                                      <th  scope="col">KETERANGAN</th>
-                                      <th scope="col">TOTAL</th>
+                                      <th></th>
+                                      <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir1"></th>
+                                      <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir2"></th>
+                                      <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir3"></th>
+                                      <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir4"></th>
+                                      <th>KETERANGAN</th>
+                                      <th>TOTAL</th>
+                                      <th>ACTION</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                       <td>100000</td>
-                                      <td><input type="text" class="form-control col-5" id="pc1"></td>
-                                      <td><input type="text" class="form-control col-5" id="pc2"></td>
-                                      <td><input type="text" class="form-control col-5" id="pc3"></td>
-                                      <td><input type="text" class="form-control col-5" id="pc4"></td>
+                                      <td><input type="text" class="form-control col-4" id="pc1"></td>
+                                      <td><input type="text" class="form-control col-4" id="pc2"></td>
+                                      <td><input type="text" class="form-control col-4" id="pc3"></td>
+                                      <td><input type="text" class="form-control col-4" id="pc4"></td>
                                       <td>Kertas</td>
-                                      <td><input type="text" class="form-control col-5" id="total"></td>
-                                      
+                                      <td><input type="text" class="form-control col-4" id="total"></td>
+                                      <td>
+                                        <a class="btn btn-warning text-white"><i class="fa-solid fa-pen-to-square white"></i></a>
+                                        <a class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
+                                      </td>
                                     </tr>
                                     <tr>
                                       <th>Grand Total</th>
@@ -128,6 +131,7 @@
                                       <th>2000000</th>
                                       <th></th>
                                       <th>2000000</th>
+                                      <th></th>
                                     </tr>
                                   </tbody>
                                 </table>
