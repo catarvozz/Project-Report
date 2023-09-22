@@ -8,8 +8,18 @@
                 <p>Jumat, 18 Agustus 2023</p>
                 <div class="container-fluid">
                     <div class="card">
+                      <div class="float-left">
+                          <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                        </div>
+                        <div class="float-right">
+                            <div class="input-group">
+                                <button type="button" class="btn btn-success mr-3 rounded">Add item</button>
+                                <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                                <button type="button" class="btn btn-outline-success">Search</button>
+                            </div>
+                        </div>
                         <div class="card-body table-responsive">
-                            <table id="tableresponsive" class="table table-striped" cellspacing="0" width="100%">
+                            <table id="" class="table table-hover" cellspacing="0" width="100%">
                                 <thead>
                                     <tr>
                                       <th scope="col">NO</th>
@@ -19,14 +29,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                @foreach ($reportpenjualanlains as $reportpenjualanlain)
+                                
                                     <tr>
-                                      <th>{{ $number++ }}</th>
-                                      <td>{{ $reportpenjualanlain->item }}</td>
-                                      <td>{{ $reportpenjualanlain->harga_satuan }}</td>
-                                      <td >{{ $reportpenjualanlain->total_penjualan}}</td>
+                                      <td>test</td>
+                                      <td>test</td>
+                                      <td>test</td>
+                                      <td>test</td>
                                     </tr>
-                                  @endforeach 
+                                  
                                   </tbody>
                                     <tr>
                                       <th colspan="3">Total Cash</th>
@@ -43,17 +53,19 @@
                             </table>
                         </div>
                     </div>
-                    <!-- table end -->
+
                     <br><br>
-                      <h6>SETORAN PENJUALAN LAIN</h6>
+                      <h4>SETORAN PENJUALAN LAIN</h4>
                       <div class="row">
-                      <!-- input nama kasir -->
                       <label class="col-sm-1">Kasir:</label>
                       <div class="col-sm-4">
                         <input type="text" class="form-control" id="staticEmail" value="Hafiz">
                       </div>
                     </div>
                       <div class="card">
+                      <div class="float-left">
+                          <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                        </div>
                         <div class="card-body table-responsive">
                           <table class="table table-hover">
                             <thead>
@@ -93,8 +105,7 @@
                           </table>
                         </div>
                       </div>
-                    <!-- table end -->
-                </div>
+                    </div>
                   <div>
                     <a href="{{ route('forminsert') }}" class="btn btn-success mt-3 mr-3 float-right">Buat Setoran</a>
                   </div>

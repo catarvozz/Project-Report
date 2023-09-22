@@ -70,9 +70,15 @@ Route::get('/laporansetoran',['middleware' => 'guest',setoranController::class, 
 
 Route::get('/login',['middleware' => 'guest',logoutController::class, 'login'])->name('login');
 
+Route::get('/masterusers',['middleware' => 'guest',master_usersController::class, 'masterusers'])->name('masterusers');
+
 Route::get('/formmasterusers',['middleware' => 'guest',master_usersController::class, 'formmasterusers'])->name('formmasterusers');
 
+Route::get('/masterpecahanuangs',['middleware' => 'guest',master_pecahanuangsController::class, 'masterpecahanuangs'])->name('masterpecahanuangs');
+
 Route::get('/formmasterpecahanuangs',['middleware' => 'guest',master_pecahanuangsController::class, 'formmasterpecahanuangs'])->name('formmasterpecahanuangs');
+
+Route::get('/masteritems',['middleware' => 'guest',master_itemsController::class, 'masteritems'])->name('masteritems');
 
 Route::get('/formmasteritems',['middleware' => 'guest',master_itemsController::class, 'formmasteritems'])->name('formmasteritems');
 

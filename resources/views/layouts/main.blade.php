@@ -182,104 +182,17 @@
                             <div class="collapse menu" id="menu6">
                                 <ul>
                                     <li>
-                                        <a href="{{ route('formmasterusers') }}">Users</a>
+                                        <a href="{{ route('masterusers') }}">Users</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('formmasterpecahanuangs') }}">Pecahan Uang</a>
+                                        <a href="{{ route('masterpecahanuangs') }}">Pecahan Uang</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('formmasteritems') }}">Items</a>
+                                        <a href="{{ route('masteritems') }}">Items</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-                    <!-- <li class="dropdown">
-                        <a href="#menu3" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fa-solid fa-database"></i><span>Master Data</span></a>
-                        <div class="collapse menu" id="menu3">
-                            <ul>
-                                <li>
-                                    <a href="{{ route('formmasterusers') }}">Add User</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('formmasterpecahanuangs') }}">Add Pecahan Uang</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('formmasteritems') }}">Add Item</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#menu4" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fa-solid fa-ticket"></i><span>Ticketing</span></a>
-                        <div class="collapse menu" id="menu4">
-                            <ul>
-                                <li>
-                                    <a href="{{ route('allticketing') }}">All Ticketing</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('summaryticketing') }}">Summary Ticketing</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#menu5" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fa-solid fa-globe"></i><span>Global</span></a>
-                        <div class="collapse menu" id="menu5">
-                            <ul>
-                                <li>
-                                    <a href="{{ route('allglobal') }}">All Global</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('summaryglobal') }}">Revenue Summary Global</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('edcglobal') }}">EDC</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('komplemenvoucher') }}">Komplemen & Voucher</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#menu6" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fa-solid fa-briefcase"></i><span>IR Dept</span></a>
-                        <div class="collapse menu" id="menu6">
-                            <ul>
-                                <li>
-                                    <a href="{{ route('allirdept') }}">All IR Dept</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('allirdeptsummary') }}">Revenue Summary IR Dept</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <a href="{{ route('allsummary') }}"><i class="fa-solid fa-border-all"></i><span>Summary</span></a>
-                    </li>
-                
-                    <li>
-                        <a href="{{ route('souvenirfnb') }}"><i class="fa-solid fa-mug-hot"></i><span>Souvenir & FnB</span></a>
-                    </li>
-
-                    <li>
-                        <a href="{{ route('penyewaan') }}"><i class="fa-solid fa-person-biking"></i><span>Penyewaan</span></a>
-                    </li>
-
-                    <li>
-                        <a href="{{ route('penjualanlain') }}"><i class="fa-solid fa-shop"></i><span>Penjualan Lain</span></a>
-                    </li>
-                    <li class="hidelogout">
-                        <a href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i><span>Log Out</span></a>
-                    </li> -->
                 </ul>
             </nav>
 

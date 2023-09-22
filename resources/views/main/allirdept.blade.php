@@ -9,8 +9,18 @@
                 <!-- table start -->
                 <div class="container-fluid">
                     <div class="card">
+                    <div class="float-left">
+                          <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                        </div>
+                        <div class="float-right">
+                            <div class="input-group">
+                                <button type="button" class="btn btn-success mr-3 rounded">Add item</button>
+                                <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                                <button type="button" class="btn btn-outline-success">Search</button>
+                            </div>
+                        </div>
                         <div class="card-body table-responsive">
-                        <table id="tableresponsive" class="table table-striped" cellspacing="0" width="100%">
+                        <table id="" class="table table-hover" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
                                     <th scope="col">NO</th>
@@ -21,15 +31,15 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach ($reportirdepts as $reportirdept)
-                                <tr>
-                                    <th>{{ $number++ }}</th>
-                                    <td>{{ $reportirdept->area }}</td>
-                                    <td>{{ $reportirdept->cash }}</td>
-                                    <td >{{ $reportirdept->edc}}</td>
-                                    <td>{{ $reportirdept->total}}</td>
-                                </tr>
-                            @endforeach 
+                            
+                                    <tr>
+                                        <th>test</th>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                            
                             </tbody>
                             <tr>
                                 <th colspan="4">Total Cash</th>

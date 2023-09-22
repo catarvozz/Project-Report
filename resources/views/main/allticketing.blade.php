@@ -18,6 +18,15 @@
                         </form>
                       </div>
                       <div class="card">
+                      <div class="float-left">
+                                <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                            </div>
+                        <div class="float-right">
+                            <div class="input-group">
+                                <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                                <button type="button" class="btn btn-outline-success">Search</button>
+                            </div>
+                        </div>
                         <div class="card-body table-responsive">
                         <table class="table table-hover" cellspacing="0" width="100%">
                           <thead>
@@ -86,17 +95,11 @@
                           <div class="float-left">
                             <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
                           </div>
-                          <div class="float-right">
-                            <div class="input-group">
-                                <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-                                <button type="button" class="btn btn-outline-success">Search</button>
-                            </div>
-                          </div>
                             <div class="card-body table-responsive">
                               <table class="table table-hover" id="textthead">
                                 <thead>
                                     <tr id="textcenter">
-                                      <th style="text-align: center" scope="col">UANG</th>
+                                      <th style="text-align: center" scope="col">SETORAN UANG</th>
                                       <th style="text-align: center" scope="col" colspan="5">JUMLAH</th>
                                     </tr>
                                     <tr>
@@ -128,6 +131,7 @@
                                   </tbody>
                                 </table>
                             </div>
+                            <button class="btn btn-success float-right mr-3">Submit</button>
                           </div>
                         <!-- table end -->
                   </div>
