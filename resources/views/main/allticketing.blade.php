@@ -104,10 +104,10 @@
                                     </tr>
                                     <tr>
                                       <th scope="col"></th>
-                                      <th scope="col">Rosa</th>
-                                      <th scope="col">Desi</th>
-                                      <th scope="col">Putri</th>
-                                      <th scope="col">Ramadhani</th>
+                                      <th scope="col"><input type="text" class="form-control col-6" id="pc1" placeholder="kasir1"></th>
+                                      <th scope="col"><input type="text" class="form-control col-6" id="pc1" placeholder="kasir2"></th>
+                                      <th scope="col"><input type="text" class="form-control col-6" id="pc1" placeholder="kasir3"></th>
+                                      <th scope="col"><input type="text" class="form-control col-6" id="pc1" placeholder="kasir4"></th>
                                       <th scope="col">Total</th>
                                     </tr>
                                 </thead>
