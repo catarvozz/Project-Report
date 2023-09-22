@@ -16,17 +16,6 @@
                 <a href="{{ route('formmasterpecahanuangs') }}" class="btn btn-success mr-3 rounded"><i class="fa-solid fa-plus"></i></a>  
             </div>
         </div>
-<!-- <div class="float-left">
-            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
-        </div>
-        <div class="float-right">
-        <div class="input-group">
-        <a href="{{ route('formmasterpecahanuangs') }}" class="btn btn-success mr-3 rounded">Add uang</a>
-            <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-            <button type="button" class="btn btn-outline-success">Search</button>
-        </div>
-        </div> -->
-
         <div class="card-body table-responsive">
         <table class="table table-hover table responsive">
             <thead>
@@ -39,8 +28,8 @@
                     <td>test</td>
                     <td>test</td>
                     <td>
-                    <button type="button" class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></button>
-                    <button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></button>    
+                    <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
+                    <a class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             </tbody>

@@ -100,15 +100,15 @@
                             <div class="collapse menu" id="menu5">
                             <ul>
                                 <li>
-                                <a href="{{ route('souvenirfnb') }}"><span>Souvenir & FnB</span></a>
+                                <a href="{{ route('souvenirfnb') }}">Souvenir & FnB</span></a>
                                 </li>
 
                                 <li>
-                                    <a href="{{ route('penyewaan') }}"></i><span>Penyewaan</span></a>
+                                    <a href="{{ route('penyewaan') }}">Penyewaan</a>
                                 </li>
 
                                 <li>
-                                    <a href="{{ route('penjualanlain') }}"><span>Penjualan Lain</span></a>
+                                    <a href="{{ route('penjualanlain') }}">Penjualan Lain</a>
                                 </li>
                             </ul>    
                         </li>
@@ -121,8 +121,8 @@
                                     <li>
                                         <li class="dropdown">
                                             <a href="#submenu1" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                            <span>Global</span></a>
-                                            <div class="collapse menu" id="submenu1">
+                                            Global >></a>
+                                            <div class="collapse submenu" id="submenu1">
                                                 <ul>
                                                     <li>
                                                         <a href="{{ route('allglobal') }}">All Global</a>
@@ -143,8 +143,8 @@
 
                                     <li class="dropdown">
                                             <a href="#submenu2" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                            <span>IR Dept</span></a>
-                                            <div class="collapse menu" id="submenu2">
+                                            IR Dept >></a>
+                                            <div class="collapse submenu" id="submenu2">
                                                 <ul>
                                                     <li>
                                                         <a href="{{ route('allirdept') }}">All IR Dept</a>
@@ -159,8 +159,8 @@
 
                                     <li class="dropdown">
                                             <a href="#submenu4" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                            <span>Rincian Uang</span></a>
-                                            <div class="collapse menu" id="submenu4">
+                                            Rincian Uang >></a>
+                                            <div class="collapse submenu" id="submenu4">
                                                 <ul>
                                                     <li>
                                                         <a href="#">Menu1</a>
@@ -325,6 +325,34 @@
         <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.html5.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.print.min.js"></script>
         <script src="../../../../js/table.js"></script>
+        <!-- Sweetalert -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script type="text/javascript">
+            $(function(){
+                $(document).on('click','#delete', function(e){
+                    e.preventDefault();
+                    var link = $(this).attr("href")
+
+                    Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!'
+                    }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                        )
+                    }
+                    })
+                })
+            });
+        </script>
   </body>
   </html>
 

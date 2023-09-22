@@ -454,8 +454,19 @@ footer {
     top: 0;
     border: 1px solid #dcd9d9;
     z-index: 4;
-}                                                                                                                                                                                                              
 }
+#sidebar.active .submenu {
+    position: absolute;
+    left: 150px;
+    background-color: white;
+    width: 200px;
+    height: auto;
+    margin: 5px 0;
+    top: 0;
+    border: 1px solid #dcd9d9;
+    z-index: 4;
+}                                                                                                                                                                                                                
+}                                                                                                                                                                                                            
 
 
 @media only screen and (min-width:992px){
