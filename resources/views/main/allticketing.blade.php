@@ -92,15 +92,12 @@
                         <br><br>
                         <h4>SETORAN TICKET</h4>
                           <div class="card">
-                          <div class="float-left">
-                            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
-                          </div>
                             <div class="card-body table-responsive">
                               <table class="table table-hover" id="textthead">
                                 <thead>
                                     <tr id="textcenter">
                                       <th style="text-align: center" scope="col">SETORAN UANG</th>
-                                      <th style="text-align: center" scope="col" colspan="5">JUMLAH</th>
+                                      <th style="text-align: center" scope="col" colspan="6">JUMLAH</th>
                                     </tr>
                                     <tr>
                                       <th scope="col"></th>
@@ -108,17 +105,20 @@
                                       <th scope="col"><input type="text" class="form-control col-6" id="pc1" placeholder="kasir2"></th>
                                       <th scope="col"><input type="text" class="form-control col-6" id="pc1" placeholder="kasir3"></th>
                                       <th scope="col"><input type="text" class="form-control col-6" id="pc1" placeholder="kasir4"></th>
-                                      <th scope="col">Total</th>
+                                      <th  scope="col">KETERANGAN</th>
+                                      <th scope="col">TOTAL</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                       <td>100000</td>
-                                      <td><input type="text" class="form-control col-3" id="pc1"></td>
-                                      <td><input type="text" class="form-control col-3" id="pc2"></td>
-                                      <td><input type="text" class="form-control col-3" id="pc3"></td>
-                                      <td><input type="text" class="form-control col-3" id="pc4"></td>
-                                      <td><input type="text" class="form-control col-3" id="total"></td>
+                                      <td><input type="text" class="form-control col-5" id="pc1"></td>
+                                      <td><input type="text" class="form-control col-5" id="pc2"></td>
+                                      <td><input type="text" class="form-control col-5" id="pc3"></td>
+                                      <td><input type="text" class="form-control col-5" id="pc4"></td>
+                                      <td>Kertas</td>
+                                      <td><input type="text" class="form-control col-5" id="total"></td>
+                                      
                                     </tr>
                                     <tr>
                                       <th>Grand Total</th>
@@ -126,6 +126,7 @@
                                       <th>2000000</th>
                                       <th>2000000</th>
                                       <th>2000000</th>
+                                      <th></th>
                                       <th>2000000</th>
                                     </tr>
                                   </tbody>

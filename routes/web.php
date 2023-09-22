@@ -21,6 +21,8 @@ use App\Http\Controllers\master_pecahanuangsController;
 use App\Http\Controllers\master_usersController;
 use App\Http\Controllers\userpasswordController;
 use App\Http\Controllers\userprofileController;
+use App\Http\Controllers\rincianuangController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -104,4 +106,7 @@ Route::post('/penyewaan/penyewaanupdate/{reportsetoranpenyewaan}',['middleware' 
 Route::get('/userprofile',['middleware' => 'guest',userprofileController::class, 'userprofile'])->name('userprofile');
 
 Route::get('/userpassword',['middleware' => 'guest',userpasswordController::class, 'userpassword'])->name('userpassword');
+
+//rincianuang
+Route::get('/rincianuang',['middleware' => 'guest',rincianuangController::class, 'rincianuang'])->name('rincianuang');
 
