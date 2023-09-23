@@ -37,10 +37,7 @@
 										<input type="checkbox" name="remember" id="remember" class="form-check-input">
 										<label for="remember" class="form-check-label">Remember Me</label>
 									</div>
-									<a href="" class="btn btn-primary ms-auto">Login</a>
-									<button type="submit" class="btn btn-primary ms-auto">
-										Login
-									</button>
+									<a href="{{route('welcome')}}" class="btn btn-success ms-auto">Login</a>
 								</div>
 							</form>
 						</div>
