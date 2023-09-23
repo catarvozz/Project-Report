@@ -23,24 +23,21 @@
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="email">Username</label>
 									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
-									<div class="invalid-feedback">
-										Username is invalid
-									</div>
+									<p class="error username-error"></p>
 								</div>
 								<div class="mb-3">
 									<div class="mb-2 w-100">
 										<label class="text-muted" for="password">Password</label>
 									</div>
 									<input id="password" type="password" class="form-control" name="password" required>
-								    <div class="invalid-feedback">
-								    	Password is required
-							    	</div>
+								    <p class="error password-error"></p>
 								</div>
 								<div class="d-flex align-items-center">
 									<div class="form-check">
 										<input type="checkbox" name="remember" id="remember" class="form-check-input">
 										<label for="remember" class="form-check-label">Remember Me</label>
 									</div>
+									<a href="" class="btn btn-primary ms-auto">Login</a>
 									<button type="submit" class="btn btn-primary ms-auto">
 										Login
 									</button>

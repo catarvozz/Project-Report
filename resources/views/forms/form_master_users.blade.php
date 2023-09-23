@@ -2,7 +2,7 @@
 
 @section('container')
     <div class="container-fluid">
-        <br><h3>Form Master Users </h3>
+        <br><h3>Form Master Users</h3>
             <div class="card">
                 <div class="card-body">
                 <form class="row g-3">

@@ -6,10 +6,10 @@
               <div class="mb-3 mt-3">
                   <h4>ALL TICKETING REPORT</h4>
                   <p>Jumat, 18 Agustus 2023</p>
-                      <div class="form mb-3" id="shadowform">
+                      <div class="form mb-3 mt-2" id="shadowform">
                         <form id="search-form">
                         <select name="kasir" class="form-select" id="select-form">
-                            <option value="all" {{ $selectedKasir == "all" ? 'selected' : '' }}>Semua Kasir</option>
+                            <option value="all" {{ $selectedKasir == "all" ? 'selected' : '' }}>Choose...</option>
                             <option value="reza" {{ $selectedKasir == "reza" ? 'selected' : '' }}>Kasir-Reza</option>
                             <option value="desi" {{ $selectedKasir == "desi" ? 'selected' : '' }}>Kasir-Desi</option>
                             <option value="banu" {{ $selectedKasir == "banu" ? 'selected' : '' }}>Kasir-Banu</option>
@@ -18,9 +18,9 @@
                         </form>
                       </div>
                       <div class="card">
-                      <div class="float-left">
-                                <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
-                            </div>
+                        <div class="float-left">
+                            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                        </div>
                         <div class="float-right">
                             <div class="input-group">
                                 <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
@@ -36,53 +36,64 @@
                                 <th>HARGA SATUAN</th>
                                 <th>TOTAL TIKET</th>
                                 <th>SALDO AWAL</th>
-                                <th>TOTAL BAYAR</th>
-                                <th>TIPE PEMBAYARAN</th>
-                                <th>KASIR</th>
+                                <th>METODE PEMBAYARAN</th>
+                                <th>TOTAL</th>
                               </tr>
                             </thead>
-                            <tbody>
-                            @foreach ($reportticketings as $reportticketing)
-                              <tr>
-                                <th>{{ $number++ }}</th>
-                                <td>{{ $reportticketing->pengunjung }}</td>
-                                <td>{{ $reportticketing->harga_satuan }}</td>
-                                <td >{{ $reportticketing->total_tiket}}</td>
-                                <td>{{ $reportticketing->saldo_awal}}</td>
-                                <td>{{ $reportticketing->total_bayar}}</td>
-                                <td>{{ $reportticketing->tipe_pembayaran}}</td>
-                                <td>{{ $reportticketing->kasir}}</td>
+                            <tbody> 
+                            <tr>
+                                <td>1</td>
+                                <td>SDN Salatiga 01</td>
+                                <td>80000</td>
+                                <td>50</td>
+                                <td>0</td>
+                                <td>
+                                  <ul>
+                                    <li>CASH</li>
+                                    <hr>
+                                    <li>TRANSFER</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                <ul>
+                                  <li>2000000</li>
+                                  <hr>
+                                  <li>2000000</li>
+                                  </ul>
+                                </td>
                               </tr>
-                            @endforeach 
+                              <tr>
+                              <td>2</td>
+                                <td>SMPN Salatiga 01</td>
+                                <td>80000</td>
+                                <td>100</td>
+                                <td>0</td>
+                                <td>
+                                  <ul>
+                                    <li>CASH</li>
+                                    <hr>
+                                    <li>SHOPEE</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                <ul>
+                                  <li>4000000</li>
+                                  <hr>
+                                  <li>4000000</li>
+                                  </ul>
+                                </td>
+                              </tr>
                             </tbody>
+                              <tr>
+                                <th colspan="3">GRAND TOTAL</th>
+                                <th>150</th>
+                                <th></th>
+                                <th></th>
+                                <th>12000000</th>
+                              </tr>
                             </table>
                           </div>
                         </div>
-                        <br><br>
-                        <h4>TOTAL PENDAPATAN KATEGORI</h4>
-                        <div class="card">
-                          <div class="float-left">
-                            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
-                          </div>
-
-                          <div class="card-body table-responsive">
-                          <table class="table table-hover table responsive">
-                              <thead>
-                                  <th>NO</th>
-                                  <th>KATEGORI</th>
-                                  <th>TOTAL PENDAPATAN</th>
-                              </thead>
-                              <tbody>
-                                  <tr>
-                                      <td>test</td>
-                                      <td>test</td>
-                                      <td>test</td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                          </div>
-                          </div>
-                        <!-- table start -->
                         <br><br>
                         <h4>SETORAN TICKET</h4>
                           <div class="card">
@@ -94,17 +105,18 @@
                                 <thead>
                                     <tr id="textcenter">
                                       <th style="text-align: center">SETORAN UANG</th>
-                                      <th style="text-align: center" colspan="5">JUMLAH</th>
+                                      <th style="text-align: center">KETERANGAN</th>
+                                      <th style="text-align: center" colspan="4">JUMLAH</th>
                                       <th></th>
                                       <th></th>
                                     </tr>
                                     <tr>
                                       <th></th>
+                                      <th></th>
                                       <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir1"></th>
                                       <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir2"></th>
                                       <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir3"></th>
                                       <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir4"></th>
-                                      <th>KETERANGAN</th>
                                       <th>TOTAL</th>
                                       <th>ACTION</th>
                                     </tr>
@@ -112,11 +124,11 @@
                                 <tbody>
                                     <tr>
                                       <td>100000</td>
+                                      <td>Kertas</td>
                                       <td><input type="text" class="form-control col-4" id="pc1"></td>
                                       <td><input type="text" class="form-control col-4" id="pc2"></td>
                                       <td><input type="text" class="form-control col-4" id="pc3"></td>
                                       <td><input type="text" class="form-control col-4" id="pc4"></td>
-                                      <td>Kertas</td>
                                       <td><input type="text" class="form-control col-4" id="total"></td>
                                       <td>
                                         <a class="btn btn-warning text-white"><i class="fa-solid fa-pen-to-square white"></i></a>
@@ -124,12 +136,11 @@
                                       </td>
                                     </tr>
                                     <tr>
-                                      <th>Grand Total</th>
+                                      <th colspan="2">GRAND TOTAL</th>
                                       <th>2000000</th>
                                       <th>2000000</th>
                                       <th>2000000</th>
                                       <th>2000000</th>
-                                      <th></th>
                                       <th>2000000</th>
                                       <th></th>
                                     </tr>

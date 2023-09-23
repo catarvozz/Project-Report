@@ -22,34 +22,32 @@
                         <table id="" class="table table-hover" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-                                    <th scope="col">NO</th>
-                                    <th scope="col">AREA</th>
-                                    <th scope="col">CASH</th>
-                                    <th scope="col">EDC</th>
-                                    <th scope="col">TOTAL</th>
+                                    <th>NO</th>
+                                    <th>AREA</th>
+                                    <th>CASH</th>
+                                    <th>EDC</th>
+                                    <th>TOTAL</th>
                                 </tr>
                             </thead>
                             <tbody>
-                            
-                                    <tr>
-                                        <th>test</th>
-                                        <td>test</td>
-                                        <td>test</td>
-                                        <td>test</td>
-                                        <td>test</td>
-                                    </tr>
-                            
+                                <tr>
+                                    <th>test</th>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                </tr>
                             </tbody>
                             <tr>
-                                <th colspan="4">Total Cash</th>
+                                <th colspan="4">TOTAL CASH</th>
                                 <th>2000000</th>
                             </tr> 
                             <tr>
-                                <th colspan="4">Total EDC</th>
+                                <th colspan="4">TOTAL EDC</th>
                                 <th>2000000</th>
                             </tr> 
                             <tr>
-                                <th colspan="4">Grand Total</th>
+                                <th colspan="4">GRAND TOTAL</th>
                                 <th>2000000</th>
                             </tr> 
                         </table>

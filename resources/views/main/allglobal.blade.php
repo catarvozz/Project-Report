@@ -43,15 +43,15 @@
                             @endforeach 
                             </tbody> 
                                 <tr>
-                                    <th colspan="5">Total Cash</th>
+                                    <th colspan="5">TOTAL CASH</th>
                                     <th>2000000</th>
                                     </tr> 
                                 <tr>
-                                    <th colspan="5">Total EDC</th>
+                                    <th colspan="5">TOTAL EDC</th>
                                     <th>2000000</th>
                                 </tr> 
                                 <tr>
-                                    <th colspan="5">Grand Total</th>
+                                    <th colspan="5">GRAND TOTAL</th>
                                     <th>2000000</th>
                                 </tr>  
                         </table>

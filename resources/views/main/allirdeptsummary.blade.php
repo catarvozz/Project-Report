@@ -15,32 +15,26 @@
                     <div class="float-left">
                           <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
                         </div>
-                        <div class="float-right">
-                            <div class="input-group">
-                                <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-                                <button type="button" class="btn btn-outline-success">Search</button>
-                            </div>
-                        </div>
                         <div class="card-body table-responsive">
                             <table id="" class="table table-hover" cellspacing="0" width="100%">
                                 <thead>
                                     <tr>
-                                        <th scope="col">NO</th>
-                                        <th scope="col">TIPE</th>
-                                        <th scope="col">TOTAL</th>
+                                        <th>NO</th>
+                                        <th>TIPE</th>
+                                        <th>TOTAL</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 
                                     <tr>
-                                        <th>test</th>
+                                        <th>1</th>
                                         <td>test</td>
                                         <td>test</td>
                                     </tr>
                                 
                                 </tbody>
                                     <tr>
-                                        <th colspan="2">Total Cash</th>
+                                        <th colspan="2">TOTAL</th>
                                         <th>2000000</th>
                                     </tr> 
                             </table>

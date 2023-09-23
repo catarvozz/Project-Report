@@ -39,15 +39,15 @@
                                   
                                   </tbody>
                                     <tr>
-                                      <th colspan="3">Total Cash</th>
+                                      <th colspan="3">TOTAL CASH</th>
                                       <th>2000000</th>
                                     </tr> 
                                     <tr>
-                                      <th colspan="3">Total EDC</th>
+                                      <th colspan="3">TOTAL EDC</th>
                                       <th>2000000</th>
                                     </tr> 
                                     <tr>
-                                      <th colspan="3">Grand Total</th>
+                                      <th colspan="3">GRAND TOTAL</th>
                                       <th>2000000</th>
                                     </tr>
                             </table>
@@ -70,18 +70,20 @@
                           <table class="table table-hover">
                             <thead>
                                 <tr>
-                                  <th scope="col">Uang Setoran</th>
-                                  <th scope="col">Jumlah</th>
-                                  <th scope="col">Keterangan</th>
-                                  <th scope="col">Action</th>
+                                <th>UANG SETORAN</th>
+                                <th>KETERANGAN</th>
+                                <th>JUMLAH</th>
+                                <th>TOTAL</th>
+                                <th>ACTION</th>
                                 </tr>
                             </thead>
                             <tbody>
                               <form action="">
                                 <tr>
                                     <td>100000</td>
-                                    <td><input type="text" class="form-control col-3" id="100000"></td>
                                     <td>Kertas</td>
+                                    <td><input type="text" class="form-control col-3" id="100000"></td>
+                                    <td><input type="text" class="form-control col-4" id="total"></td>
                                     <td>
                                       <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
                                       <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
@@ -89,8 +91,9 @@
                                   <tr>
                                   <tr>
                                     <td>75000</td>
-                                    <td><input type="text" class="form-control col-3" id="100000"></td>
                                     <td>Kertas</td>
+                                    <td><input type="text" class="form-control col-3" id="100000"></td>
+                                    <td><input type="text" class="form-control col-4" id="total"></td>
                                     <td>
                                       <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
                                       <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
@@ -98,16 +101,19 @@
                                   <tr>
                                   <tr>
                                     <td>50000</td>
-                                    <td><input type="text" class="form-control col-3" id="100000"></td>
                                     <td>Kertas</td>
+                                    <td><input type="text" class="form-control col-3" id="100000"></td>
+                                    <td><input type="text" class="form-control col-4" id="total"></td>
                                     <td>
                                       <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
                                       <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
                                     </td>
                                   <tr>
                                   <tr>
-                                    <th colspan="3">Total</th>
+                                    <th colspan="2">GRAND TOTAL</th>
+                                    <th>200</th>
                                     <th>2000000</th>
+                                    <th></th>
                                   </tr> 
                                 </form>
                               </tbody>
