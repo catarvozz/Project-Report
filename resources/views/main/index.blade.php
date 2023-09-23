@@ -13,7 +13,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Ticket</p>
-                            <small class="text-success"><i class="fa-solid fa-arrow-up"></i> +18.2% than yesterday</small>
+                            <small class="text-success"><i class="fa-solid fa-arrow-up"></i> 18.2% than yesterday</small>
                         </div>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Souvenir & FnB</p>
-                            <small class="text-success"><i class="fa-solid fa-arrow-up"></i> +5% than yesterday</small>
+                            <small class="text-success"><i class="fa-solid fa-arrow-up"></i> 5% than yesterday</small>
                         </div>
                      </div>
                 </div>
@@ -31,7 +31,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Penyewaan</p>
-                            <small class="text-danger"><i class="fa-solid fa-arrow-down"></i> -2.6% than yesterday</small>
+                            <small class="text-danger"><i class="fa-solid fa-arrow-down"></i> 2.6% than yesterday</small>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Rp35.000.000</h5>
                             <p class="card-text">Penjualan Lain</p>
-                            <small class="text-success"><i class="fa-solid fa-arrow-up"></i> +2% than yesterday</small>
+                            <small class="text-success"><i class="fa-solid fa-arrow-up"></i> 2% than yesterday</small>
                         </div>
                     </div>
                 </div>

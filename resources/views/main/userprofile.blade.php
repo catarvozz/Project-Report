@@ -18,7 +18,7 @@
                 <input type="password" name="oldpwd" value="it.evydian" class="form-control" disabled>
             </div>
             <div>
-                <button class="btn btn-primary" type="submit">Save</button>
+                <button class="btn btn-outline-success" type="submit">Save</button>
             </div>
         </div>
     </div>

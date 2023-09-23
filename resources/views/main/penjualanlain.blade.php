@@ -119,7 +119,7 @@
                               </tbody>
                           </table>
                             <div>
-                            <a href="{{ route('forminsert') }}" class="btn btn-success mt-3 mr-3 float-right">Submit</a>
+                            <a href="#" class="btn btn-success mt-3 mr-3 float-right text-white" id="sucess">Submit</a>
                           </div>
                         </div>  
                       </div>

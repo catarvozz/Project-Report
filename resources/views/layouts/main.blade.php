@@ -317,9 +317,8 @@
         <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.html5.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.print.min.js"></script>
         <script src="../../../../js/table.js"></script>
-        <!-- Error Massage -->
-        <script src="../../../../js/table.js"></script>
-        <!-- Sweetalert -->
+
+        <!-- Sweetalert Warning-->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script type="text/javascript">
             $(function(){
@@ -343,6 +342,18 @@
                         'success'
                         )
                     }
+                    })
+                })
+            });
+            $(function(){
+                $(document).on('click','#sucess', function(e){
+                    e.preventDefault();
+                    var link = $(this).attr("href")
+                    Swal.fire({
+                    icon: 'success',
+                    title: 'Your work has been submitted',
+                    showConfirmButton: false,
+                    timer: 1500
                     })
                 })
             });
