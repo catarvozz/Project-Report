@@ -5,27 +5,34 @@
         <div class="container-fluid">
             <div class="mb-3 mt-3">
                 <h4>PENYEWAAN REPORT</h4>
-                <p>Jumat, 18 Agustus 2023</p>
+                <div class="d-flex justify-content-end">
+                    <div class="p-2">
+                        <div class="input-group date" id="datepicker">
+                            <input type="date" class="form-control" id="date" />
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="dropdown">
+                            <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-download"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Download as Excel</a></li>
+                                <li><a class="dropdown-item" href="#">Download as PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="container-fluid">
-                    <div class="card">
-                    <div class="float-left">
-                          <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
-                      </div>
-                      <div class="float-right">
-                          <div class="input-group">
-                              <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-                              <button type="button" class="btn btn-outline-success mr-3 rounded">Search</button>
-                              <button type="button" class="btn btn-success mr-3 rounded"><i class="fa-solid fa-plus"></i></button>  
-                          </div>
-                      </div>
+                    <div class="card mb-5">
                         <div class="card-body table-responsive">
                             <table id="" class="table table-hover" cellspacing="0" width="100%">
                                 <thead>
                                     <tr>
-                                      <th scope="col">NO</th>
-                                      <th scope="col">ITEM</th>
-                                      <th scope="col">HARGA SATUAN</th>
-                                      <th scope="col">TOTAL PENYEWAAN</th>
+                                      <th>NO</th>
+                                      <th>ITEM</th>
+                                      <th>HARGA SATUAN</th>
+                                      <th>TOTAL PENYEWAAN</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -42,7 +49,12 @@
                                       <td>50000</td>
                                       <td>100000</td>
                                     </tr>
-
+                                    <tr>
+                                      <th>3</th>
+                                      <td><input type="text" class="form-control col-3"></td>
+                                      <td><input type="text" class="form-control col-3"></td>
+                                      <td><button type="button" class="btn btn-primary">Submit</button></td>
+                                    </tr>
                                   </tbody>
                                     <tr>
                                       <th colspan="3">TOTAL CASH</th>
@@ -59,8 +71,6 @@
                             </table>
                         </div>
                     </div>
-
-                    <br><br>
                       <h4>SETORAN PENYEWAAN</h4>
                       <div class="row">
                       <label class="col-sm-1">Kasir:</label>
@@ -69,9 +79,6 @@
                       </div>
                     </div>
                       <div class="card">
-                      <div class="float-left">
-                          <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
-                        </div>
                         <div class="card-body table-responsive">
                           <table class="table table-hover">
                             <thead>
@@ -89,7 +96,7 @@
                                     <td>100000</td>
                                     <td>Kertas</td>
                                     <td><input type="text" class="form-control col-3" id="100000"></td>
-                                    <td><input type="text" class="form-control col-4" id="total"></td>
+                                    <td>200000</td>
                                     <td>
                                       <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
                                       <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
@@ -99,7 +106,7 @@
                                     <td>75000</td>
                                     <td>Kertas</td>
                                     <td><input type="text" class="form-control col-3" id="100000"></td>
-                                    <td><input type="text" class="form-control col-4" id="total"></td>
+                                    <td>200000</td>
                                     <td>
                                       <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
                                       <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
@@ -109,7 +116,7 @@
                                     <td>50000</td>
                                     <td>Kertas</td>
                                     <td><input type="text" class="form-control col-3" id="100000"></td>
-                                    <td><input type="text" class="form-control col-4" id="total"></td>
+                                    <td>200000</td>
                                     <td>
                                       <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
                                       <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>

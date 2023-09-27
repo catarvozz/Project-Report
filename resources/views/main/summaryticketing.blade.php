@@ -5,37 +5,45 @@
         <div class="container-fluid">
             <div class="mb-3 mt-3">
                 <h4>PENJUALAN TIKET REPORT</h4>
-                <p>Jumat, 18 Agustus 2023</p>
+                <div class="d-flex justify-content-end">
+                    <div class="p-2">
+                        <div class="input-group date" id="datepicker">
+                            <input type="date" class="form-control" id="date" />
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="dropdown">
+                            <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-download"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Download as Excel</a></li>
+                                <li><a class="dropdown-item" href="#">Download as PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                     <!-- table start -->
                     <div class="container-fluid">
-                        <div class="card">
-                            <div class="float-left">
-                                <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
-                            </div>
-                            <div class="float-right">
-                                <div class="input-group">
-                                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-                                    <button type="button" class="btn btn-outline-success mr-3 rounded">Search</button>
-                                </div>
-                            </div>
+                        <div class="card mb-5">
                             <div class="card-body table-responsive">
                                 <table id="" class="table table-hover" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
                                             <th></th>
-                                            <th style="text-align: center" scope="col" colspan="2">SALES</th>
-                                            <th style="text-align: center" scope="col" colspan="2">MARKETING</th>
-                                            <th style="text-align: center" scope="col" colspan="3">KETERANGAN</th>
+                                            <th style="text-align: center" colspan="2">SALES</th>
+                                            <th style="text-align: center" colspan="2">MARKETING</th>
+                                            <th style="text-align: center" colspan="3">KETERANGAN</th>
                                         </tr>
                                         <tr>
-                                            <th scope="col">DATE</th>
-                                            <th scope="col">Group</th>
-                                            <th scope="col">Group Web</th>
-                                            <th scope="col">Individu-Terusan</th>
-                                            <th scope="col">Individu-OTA</th>
-                                            <th scope="col">Total Berbayar</th>
-                                            <th scope="col">Total Komplimen</th>
-                                            <th scope="col">Total</th>
+                                            <th>DATE</th>
+                                            <th>Group</th>
+                                            <th>Group Web</th>
+                                            <th>Individu-Terusan</th>
+                                            <th>Individu-OTA</th>
+                                            <th>Total Berbayar</th>
+                                            <th>Total Komplimen</th>
+                                            <th>Total</th>
                                         </tr>
                                     </thead>
                                     <tbody id="textthead">

@@ -5,10 +5,25 @@
 <main class="content px-3 py-2">
     <div class="container-fluid">
     <h3>Master Pecahan Uang</h3>
-        <div class="card">
-        <div class="float-left">
-            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+        <div class="d-flex justify-content-end">
+            <div class="p-2">
+                <div class="input-group date" id="datepicker">
+                    <input type="date" class="form-control" id="date" />
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="dropdown">
+                    <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Download as Excel</a></li>
+                        <li><a class="dropdown-item" href="#">Download as PDF</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <div class="card">
         <div class="float-right">
             <div class="input-group">
                 <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">

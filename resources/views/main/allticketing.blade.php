@@ -5,22 +5,37 @@
           <div class="container-fluid">
               <div class="mb-3 mt-3">
                   <h4>ALL TICKETING REPORT</h4>
-                  <p>Jumat, 18 Agustus 2023</p>
-                      <div class="form mb-3 mt-2" id="shadowform">
-                        <form id="search-form">
-                        <select name="kasir" class="form-select" id="select-form">
-                            <option value="all" {{ $selectedKasir == "all" ? 'selected' : '' }}>Choose...</option>
-                            <option value="reza" {{ $selectedKasir == "reza" ? 'selected' : '' }}>Kasir-Reza</option>
-                            <option value="desi" {{ $selectedKasir == "desi" ? 'selected' : '' }}>Kasir-Desi</option>
-                            <option value="banu" {{ $selectedKasir == "banu" ? 'selected' : '' }}>Kasir-Banu</option>
-                        </select>
-                        <noscript><button type="submit"></button></noscript>
-                        </form>
-                      </div>
-                      <div class="card">
-                        <div class="float-left">
-                            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                  <div class="d-flex justify-content-end">
+                    <div class="p-2">
+                        <div class="input-group date" id="datepicker">
+                            <input type="date" class="form-control" id="date" />
                         </div>
+                    </div>
+                    <div class="p-2">
+                        <form id="search-form">
+                            <select name="kasir" class="form-select" id="select-form">
+                                <option value="all" {{ $selectedKasir == "all" ? 'selected' : '' }}>Choose...</option>
+                                <option value="reza" {{ $selectedKasir == "reza" ? 'selected' : '' }}>Kasir-Reza</option>
+                                <option value="desi" {{ $selectedKasir == "desi" ? 'selected' : '' }}>Kasir-Desi</option>
+                                <option value="banu" {{ $selectedKasir == "banu" ? 'selected' : '' }}>Kasir-Banu</option>
+                            </select>
+                            <noscript><button type="submit"></button></noscript>
+                        </form>
+                    </div>
+                    <div class="p-2">
+                        <div class="dropdown">
+                            <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-download"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Download as Excel</a></li>
+                                <li><a class="dropdown-item" href="#">Download as PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                      <div class="card mb-5">
                         <div class="float-right">
                             <div class="input-group">
                                 <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
@@ -94,12 +109,8 @@
                             </table>
                           </div>
                         </div>
-                        <br><br>
                         <h4>SETORAN TICKET</h4>
-                          <div class="card">
-                          <div class="float-left">
-                            <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
-                          </div>
+                          <div class="card mb-5">
                             <div class="card-body table-responsive">
                               <table class="table table-hover" id="textthead">
                                 <thead>
@@ -113,10 +124,10 @@
                                     <tr>
                                       <th></th>
                                       <th></th>
-                                      <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir1"></th>
-                                      <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir2"></th>
-                                      <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir3"></th>
-                                      <th><input type="text" class="form-control col-6" id="pc1" placeholder="kasir4"></th>
+                                      <th>Kasir1</th>
+                                      <th>Kasir2</th>
+                                      <th>Kasir3</th>
+                                      <th>Kasir4</th>
                                       <th>TOTAL</th>
                                       <th>ACTION</th>
                                     </tr>
@@ -129,7 +140,7 @@
                                       <td><input type="text" class="form-control col-4" id="pc2"></td>
                                       <td><input type="text" class="form-control col-4" id="pc3"></td>
                                       <td><input type="text" class="form-control col-4" id="pc4"></td>
-                                      <td><input type="text" class="form-control col-4" id="total"></td>
+                                      <td>100000</td>
                                       <td>
                                         <a class="btn btn-warning text-white"><i class="fa-solid fa-pen-to-square white"></i></a>
                                         <a class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>

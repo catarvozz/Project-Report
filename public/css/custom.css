@@ -200,6 +200,7 @@ a:focus {
 
 .fa-solid {
     font-size: 23px;
+    color: white;
 }
 
 /* ---------------------------------------------------
@@ -304,11 +305,11 @@ a:focus {
 }
 
 
- .navbar-nav > li.show .dropdown-menu {
+ /* .navbar-nav > li.show .dropdown-menu {
     transform: translate3d(0, 0, 0);
 	opacity:1;
 	visibility:visible;
-}
+} */
 
 
 .dropdown-menu li > a {
@@ -448,7 +449,7 @@ footer {
     position: absolute;
     left: 81px;
     background-color: white;
-    width: 200px;
+    width: 180px;
     height: auto;
     margin: 5px 0;
     top: 0;
@@ -467,24 +468,6 @@ footer {
     z-index: 4;
 }                                                                                                                                                                                                                
 }                                                                                                                                                                                                            
-
-
-@media only screen and (min-width:992px){
-.dropdown-menu {
-    border: 0;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
-	transform: translate3d(0, -20px, 0);
-    /* visibility: hidden; */
-	transition: all 150ms linear;
-    display: block;
-	min-width:15rem;
-	right: 0;
-    left: auto;
-    opacity: 0;
-}
-	
-}
-
 
 /*===============small-screen overlay sidebar design media queries==============*/
 
@@ -558,7 +541,7 @@ tr #textcenter {
 }
 
 #navbarSupportedContent ul li a i {
-    position: relative;
+    position: inherit;
     /* margin-right: 1px; */
     top: 5px;
 	color: white;
@@ -627,3 +610,7 @@ tr #textcenter {
   .btn-warning {
     background-color: #F39F19;
   }
+
+ .btn-primary {
+    background-color: #1e56af;
+ }

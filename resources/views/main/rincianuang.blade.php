@@ -5,11 +5,25 @@
             <div class="container-fluid">
                 <div class="mb-3 mt-3">
                 <h4>REKAP UANG SETORAN</h4>
-                <p>Jumat, 18 Agustus 2023</p>
-                  <div class="card">
-                    <div class="float-left">
-                        <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
+                <div class="d-flex justify-content-end">
+                    <div class="p-2">
+                        <div class="input-group date" id="datepicker">
+                            <input type="date" class="form-control" id="date" />
+                        </div>
                     </div>
+                    <div class="p-2">
+                        <div class="dropdown">
+                            <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-download"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Download as Excel</a></li>
+                                <li><a class="dropdown-item" href="#">Download as PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                  <div class="card mb-5">
                   <div class="card-body table-responsive">
                     <table class="table table-hover" id="textthead">
                     <thead>
@@ -38,12 +52,8 @@
               <!-- table end -->
               </div>
             </div>
-          <br><br>
           <h4>BRI 303</h4>
-              <div class="card">
-                <div class="float-left">
-                    <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
-                </div>
+              <div class="card mb-5">
               <div class="card-body table-responsive">
                   <table class="table table-hover" id="textthead">
                   <thead>
@@ -73,12 +83,8 @@
               </div>
             <!-- table end -->
           </div>
-          <br>
           <h4>MODAL</h4>
-          <div class="card">
-            <div class="float-left">
-                <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
-            </div>
+          <div class="card mb-5">
             <div class="card-body table-responsive">
             <table class="table table-hover table responsive">
                 <thead>

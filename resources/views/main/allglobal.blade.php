@@ -1,17 +1,31 @@
 @extends('layouts/main')
 
 @section('container')
-    <main class="content px-3 py-2">
+    <main class="content px-50 py-2">
         <div class="container-fluid">
             <div class="mb-3 mt-3">
                 <h4>MONITORING PENJUALAN SOUVENIR AND F&B-ALL GLOBAL</h4>
-                <p>Jumat, 18 Agustus 2023</p>
+                <div class="d-flex justify-content-end">
+                    <div class="p-2">
+                        <div class="input-group date" id="datepicker">
+                            <input type="date" class="form-control" id="date" />
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="dropdown">
+                            <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-download"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Download as Excel</a></li>
+                                <li><a class="dropdown-item" href="#">Download as PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             <!-- table start -->
             <div class="container-fluid">
                 <div class="card">
-                    <div class="float-left">
-                        <button class="btn btn-warning text-white"><i class="fa-solid fa-file-excel"></i> Excel</button>
-                    </div>
                     <div class="float-right">
                         <div class="input-group">
                             <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
@@ -22,12 +36,12 @@
                         <table id="" class="table table-hover" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-                                    <th scope="col">NO</th>
-                                    <th scope="col">AREA</th>
-                                    <th scope="col">CASH</th>
-                                    <th scope="col">EDC</th>
-                                    <th scope="col">KATEGORI</th>
-                                    <th scope="col">TOTAL</th>
+                                    <th>NO</th>
+                                    <th>AREA</th>
+                                    <th>CASH</th>
+                                    <th>EDC</th>
+                                    <th>KATEGORI</th>
+                                    <th>TOTAL</th>
                                 </tr>
                             </thead>
                             <tbody>

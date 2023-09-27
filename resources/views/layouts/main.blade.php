@@ -4,7 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="icon" href="../../../../img/lokaprofpic.png" >
         <title>{{ $title }}</title>
@@ -15,9 +14,6 @@
         <link rel="stylesheet" href="../../../../css/custom.css">
         <!--awesome icon-->
         <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
-        <!-- DataTable -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.3.3/css/buttons.bootstrap5.min.css"/>
   </head>
   <body>
     <div class="wrapper">
@@ -31,9 +27,9 @@
                 <ul class="list-unstyled components">
                     <li  class="active">
                         <a href="{{ route('welcome') }}" class="dashboard"><i class="fa-solid fa-gauge" id="green"></i><span>Dashboard</span></a>
-                    </li>
-            
-                <div class="small-screen navbar-display">
+                    </li>  
+                <!-- <div class="small-screen navbar-display">
+                <ul>
                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
                         <a href="#menu0" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fa-solid fa-bell"></i><span>notification</span></a>
@@ -76,7 +72,8 @@
                             </ul>
                         </div>
                     </li>
-                </div>
+                </ul>
+                </div> -->
                 <!-- big screen -->
                 <ul>
                     <li class="dropdown">
@@ -185,6 +182,10 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="nav-item hidelogout">
+                            <a href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
+                        </li>
+                    </ul>  
                 </ul>
             </nav>
 
@@ -198,19 +199,20 @@
                         <i class="fa-solid fa-bars"></i>
                         </button>
                     
-                        <button class="d-inline-block d-lg-none ml-auto more-button mr-3" type="button" data-toggle="collapse"
+                        <button class="d-inline-block d-lg-none mr-auto more-button ml-3" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars"></i>
                         </button>
 
-                        <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav ml-auto">
-                                <li class="dropdown nav-item">
+                        <!-- <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none mr-5" id="navbarSupportedContent"> -->
+                        <div>
+                            <ul class="nav navbar-nav ml-auto flex-row position-relative">
+                                <li class="dropdown nav-item position-static">
                                     <a href="#" class="nav-link" data-toggle="dropdown">
                                         <i class="fa-solid fa-bell"></i>
                                         <span class="notification">2</span>
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu position-absolute">
                                         <li>
                                             <a href="#">Notif 1</a>
                                         </li>
@@ -219,24 +221,26 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="dropdown nav-item">
+                                <li class="dropdown nav-item position-static">
                                     <a href="#" class="nav-link" data-toggle="dropdown">
-                                    <div class="d-flex align-items-center">
-                                        <img src="../../../../img/userprofpic.jpg" class="topbarimg" />
-                                        <span class="ms-2" id="textuser">Magang'23</span>
-                                    </div></a>
+                                        <div class="d-flex align-items-center">
+                                            <img src="../../../../img/userprofpic.jpg" class="topbarimg" />
+                                        </div>
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu position-absolute">
                                         <li>
-                                            <a href="{{ route('userprofile') }}">Profile</a>
+                                            <a href="{{ route('userprofile') }}">Magang'23</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('login') }}">Logout</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="dropdown nav-item">
+                                <li class="dropdown nav-item position-static">
                                     <a href="#" class="nav-link" data-toggle="dropdown">
                                         <i class="fa-solid fa-gear"></i>
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu position-absolute">
                                         <li>
                                             <a href="#">Setting 1</a>
                                         </li>
@@ -244,9 +248,6 @@
                                             <a href="#">Setting 2</a>
                                         </li>
                                     </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -264,9 +265,7 @@
     </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="../../../../js/jquery-3.3.1.slim.min.js"></script>
         <script src="../../../../js/bootstrap.min.js"></script>
-        <script src="../../../../js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript">
         $(document).ready(function () {
                     $('#sidebarCollapse').on('click', function () {
@@ -303,20 +302,9 @@
         // });
 </script>
         <!-- Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <!-- JQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- DataTable -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/dataTables.buttons.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.bootstrap5.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.html5.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.print.min.js"></script>
-        <script src="../../../../js/table.js"></script>
 
         <!-- Sweetalert Warning-->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
