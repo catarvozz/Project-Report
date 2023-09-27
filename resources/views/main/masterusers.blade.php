@@ -56,13 +56,6 @@
         </table>
         </div>
         </div>
-        
-        <!-- <a href="{{ route('formmasterusers') }}"> 
-            <div class="card" style="width: 100%; height: 65px; border-radius: 10px; background-color: #169870; color:#ffff">
-                <h4 style="float: left; margin: 5px;">Add new user</h4>
-                <i class="fa-solid fa-angle-right mr-2 mt-2" style="float: right; font-size:30px"></i>
-            </div>
-        </a> -->
     </div>
 </main>
 

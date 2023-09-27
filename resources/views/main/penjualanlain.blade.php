@@ -94,7 +94,7 @@
                                     <td>200000</td>
                                     <td>
                                       <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
-                                      <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
+                                      <a href="#" class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can"></i></a>
                                     </td>
                                   <tr>
                                   <tr>
@@ -104,7 +104,7 @@
                                     <td>200000</td>
                                     <td>
                                       <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
-                                      <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
+                                      <a href="#" class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can"></i></a>
                                     </td>
                                   <tr>
                                   <tr>
@@ -114,7 +114,7 @@
                                     <td>200000</td>
                                     <td>
                                       <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
-                                      <a href="#" class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
+                                      <a href="#" class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can"></i></a>
                                     </td>
                                   <tr>
                                   <tr>

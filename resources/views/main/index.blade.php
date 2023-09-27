@@ -5,7 +5,11 @@
         <div class="container-fluid">
             <div>
             <h1>Dashboard</h1>
-            <p>Jumat, 18 Agustus 2023</p>
+            <div class="d-flex justify-content-start col-2">
+                <div class="input-group date" id="datepicker">
+                    <input type="date" class="form-control" id="date" />
+                </div>
+            </div>
              <!-- content -->
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3 mb-4">

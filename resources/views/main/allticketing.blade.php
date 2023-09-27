@@ -136,14 +136,14 @@
                                     <tr>
                                       <td>100000</td>
                                       <td>Kertas</td>
-                                      <td><input type="text" class="form-control col-4" id="pc1"></td>
-                                      <td><input type="text" class="form-control col-4" id="pc2"></td>
-                                      <td><input type="text" class="form-control col-4" id="pc3"></td>
-                                      <td><input type="text" class="form-control col-4" id="pc4"></td>
+                                      <td><input type="text" class="form-control col-3" id="pc1"></td>
+                                      <td><input type="text" class="form-control col-3" id="pc2"></td>
+                                      <td><input type="text" class="form-control col-3" id="pc3"></td>
+                                      <td><input type="text" class="form-control col-3" id="pc4"></td>
                                       <td>100000</td>
                                       <td>
-                                        <a class="btn btn-warning text-white"><i class="fa-solid fa-pen-to-square white"></i></a>
-                                        <a class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can"></i></a>
+                                        <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
+                                        <a class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can"></i></a>
                                       </td>
                                     </tr>
                                     <tr>
