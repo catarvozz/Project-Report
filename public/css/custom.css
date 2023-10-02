@@ -200,11 +200,10 @@ a:focus {
 
 .fa-solid {
     font-size: 23px;
-    color: white;
 }
 
 a .fa-solid {
-    font-size: 18px;
+    font-size: 20px;
     color: white;
 }
 
@@ -598,11 +597,11 @@ tr #textcenter {
 }
 
 /* menyembunyikan menu log out di sidebar ketika layar membesar */
-  @media (min-width: 992px) {
+  /* @media (min-width: 992px) {
     #sidebar li.hidelogout {
       display: none;
     }
-  }
+  } */
   
   small .fa-solid {
     font-size: 13px;

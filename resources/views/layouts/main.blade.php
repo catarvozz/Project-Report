@@ -25,55 +25,9 @@
                 </div>
 
                 <ul class="list-unstyled components">
-                    <li  class="active">
+                    <li>
                         <a href="{{ route('welcome') }}" class="dashboard"><i class="fa-solid fa-gauge" id="green"></i><span>Dashboard</span></a>
                     </li>  
-                <!-- <div class="small-screen navbar-display">
-                <ul>
-                    <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                        <a href="#menu0" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fa-solid fa-bell"></i><span>notification</span></a>
-                        <div class="collapse list-unstyled menu" id="menu0">
-                            <ul>
-                                <li>
-                                    <a href="#">Notif 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Notif 2</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                        <a href="#menu1" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <div class="d-flex align-items-center">
-                            <img src="../../../../img/userprofpic.jpg" class="topbarimg" />
-                            <span class="ms-2">Magang'23</span>
-                        </div></a>
-                        <div class="collapse list-unstyled menu" id="menu1">
-                            <ul>
-                                <li>
-                                    <a href="{{ route('userprofile') }}">Profile</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                        <a href="#menu2" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fa-solid fa-gear"></i><span>setting</span></a>
-                        <div class="collapse list-unstyled menu" id="menu2">
-                            <ul>
-                                <li>
-                                    <a href="#">Setting 1</a>
-                                </li>
-                                <li>
-                                    <a href="">Setting 2</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                </div> -->
                 <!-- big screen -->
                 <ul>
                     <li class="dropdown">
@@ -182,9 +136,9 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item hidelogout">
+                        <!-- <li class="nav-item hidelogout">
                             <a href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
-                        </li>
+                        </li> -->
                     </ul>  
                 </ul>
             </nav>
@@ -209,7 +163,7 @@
                             <ul class="nav navbar-nav ml-auto flex-row position-relative">
                                 <li class="dropdown nav-item position-static">
                                     <a href="#" class="nav-link" data-toggle="dropdown">
-                                        <i class="fa-solid fa-bell"></i>
+                                        <i class="fa-solid fa-bell mt-1"></i>
                                         <span class="notification">2</span>
                                     </a>
                                     <ul class="dropdown-menu position-absolute">
@@ -238,7 +192,7 @@
                                 </li>
                                 <li class="dropdown nav-item position-static">
                                     <a href="#" class="nav-link" data-toggle="dropdown">
-                                        <i class="fa-solid fa-gear"></i>
+                                        <i class="fa-solid fa-gear mt-1"></i>
                                     </a>
                                     <ul class="dropdown-menu position-absolute">
                                         <li>
