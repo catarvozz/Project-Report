@@ -1,38 +1,31 @@
 @extends('layouts/main')
 
 @section('container')
-    <main class="content px-3 py-2">
-        <div class="container-fluid">
-            <div class="mb-3 mt-3">
-                <h4>ALL SUMMARY</h4>
-                <div class="d-flex justify-content-end">
-                    <div class="p-2">
-                        <div class="input-group date" id="datepicker">
-                            <input type="date" class="form-control" id="date" />
-                        </div>
-                    </div>
-                    <div class="p-2">
-                        <div class="dropdown">
-                            <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-download"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Download as Excel</a></li>
-                                <li><a class="dropdown-item" href="#">Download as PDF</a></li>
-                            </ul>
-                        </div>
+<main class="content px-3 py-2">
+    <div class="container-fluid">
+        <div class="mb-3 mt-3">
+            <h4>ALL SUMMARY</h4>
+            <div class="d-flex justify-content-end">
+                <div class="p-2">
+                    <div class="input-group date" id="datepicker">
+                        <input type="date" class="form-control" id="date" />
                     </div>
                 </div>
-                <!-- table start -->
-                <div class="container-fluid">
-                    <div class="card mb-5">
-                        <div class="float-right">
-                            <div class="input-group">
-                                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-                                <button type="button" class="btn btn-outline-success mr-3 rounded">Search</button> 
-                            </div>
-                        </div>
-                        <div class="card-body table-responsive">
+                <div class="p-2">
+                    <div class="dropdown">
+                        <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Download as Excel</a></li>
+                            <li><a class="dropdown-item" href="#">Download as PDF</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="card mb-5">
+                    <div class="card-body table-responsive">
                         <table id="" class="table table-hover" cellspacing="0" width="100%">
                             <thead>
                                 <tr class="floating-text">
@@ -66,7 +59,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                             @foreach ($reportsummarys as $reportsummary)
+                            @foreach ($reportsummarys as $reportsummary)
                                 <tr>
                                     <td>{{ $reportsummary->tanggal }}</td>
                                     <td>{{ $reportsummary->ticketing }}</td>
@@ -99,11 +92,11 @@
                             @endforeach 
                             </tbody>
                         </table>
-                        </div>
                     </div>
-                    <h4>TOTAL PENDAPATAN KATEGORI</h4>
-                    <div class="card mb-5">
-                        <div class="card-body table-responsive">
+                </div>
+                <h4>TOTAL PENDAPATAN KATEGORI</h4>
+                <div class="card mb-5">
+                    <div class="card-body table-responsive">
                         <table class="table table-hover" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
@@ -120,11 +113,10 @@
                             @endforeach 
                             </tbody> 
                         </table>
-                        </div>
                     </div>
                 </div>
-            <!-- table end -->
             </div>
         </div>
-    </main>
+    </div>
+</main>
 @endsection

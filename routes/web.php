@@ -66,7 +66,7 @@ Route::get('/summaryticketing',['middleware' => 'guest',summary_ticketingControl
 
 Route::get('/summaryglobal',['middleware' => 'guest',summary_globalController::class, 'revenuesummary'])->name('summaryglobal');
 
-Route::get('/laporanmenu',['middleware' => 'guest',menu_restoController::class, 'menuresto'])->name('laporanmenu');
+// Route::get('/laporanmenu',['middleware' => 'guest',menu_restoController::class, 'menuresto'])->name('laporanmenu');
 
 Route::get('/laporansetoran',['middleware' => 'guest',setoranController::class, 'setoran'])->name('laporansetoran');
 

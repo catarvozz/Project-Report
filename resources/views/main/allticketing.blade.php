@@ -5,44 +5,37 @@
     <div class="container-fluid">
         <div class="mb-3 mt-3">
             <h4>ALL TICKETING REPORT</h4>
-              <div class="d-flex justify-content-end">
-                  <div class="p-2">
-                      <div class="input-group date" id="datepicker">
-                          <input type="date" class="form-control" id="date" />
-                      </div>
-                  </div>
-                  <div class="p-2">
-                      <form id="search-form">
-                          <select name="kasir" class="form-select" id="select-form">
-                          <option value="all" {{ $selectedKasir == "all" ? 'selected' : '' }}>Choose...</option>
-                          <option value="reza" {{ $selectedKasir == "reza" ? 'selected' : '' }}>Kasir-Reza</option>
-                          <option value="desi" {{ $selectedKasir == "desi" ? 'selected' : '' }}>Kasir-Desi</option>
-                          <option value="banu" {{ $selectedKasir == "banu" ? 'selected' : '' }}>Kasir-Banu</option>
-                          </select>
-                          <noscript><button type="submit"></button></noscript>
-                      </form>
-                  </div>
-                  <div class="p-2">
-                      <div class="dropdown">
-                          <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-download"></i>
-                          </button>
-                          <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Download as Excel</a></li>
-                              <li><a class="dropdown-item" href="#">Download as PDF</a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
+            <div class="d-flex justify-content-end">
+                <div class="p-2">
+                    <div class="input-group date" id="datepicker">
+                        <input type="date" class="form-control" id="date" />
+                    </div>
+                </div>
+                <div class="p-2">
+                    <form id="search-form">
+                        <select name="kasir" class="form-select" id="select-form">
+                        <option value="all" {{ $selectedKasir == "all" ? 'selected' : '' }}>Choose...</option>
+                        <option value="reza" {{ $selectedKasir == "reza" ? 'selected' : '' }}>Kasir-Reza</option>
+                        <option value="desi" {{ $selectedKasir == "desi" ? 'selected' : '' }}>Kasir-Desi</option>
+                        <option value="banu" {{ $selectedKasir == "banu" ? 'selected' : '' }}>Kasir-Banu</option>
+                        </select>
+                        <noscript><button type="submit"></button></noscript>
+                    </form>
+                </div>
+                <div class="p-2">
+                    <div class="dropdown">
+                        <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-download"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Download as Excel</a></li>
+                            <li><a class="dropdown-item" href="#">Download as PDF</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
               <div class="card mb-5">
-                  <div class="float-right">
-                      <div class="input-group">
-                          <input type="search" class="form-control ml-3 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-                          <button type="button" class="btn btn-outline-success">Search</button>
-                      </div>
-                  </div>
-
                   <div class="card-body table-responsive">
                       <table class="table table-hover" cellspacing="0" width="100%">
                           <thead>
@@ -114,7 +107,7 @@
               <h4>SETORAN TICKET</h4>
               <div class="card mb-5">
                   <div class="card-body table-responsive">
-                      <table class="table table-hover" id="textthead">
+                      <table class="table table-hover">
                           <thead>
                             <tr id="textcenter">
                               <th style="text-align: center">SETORAN UANG</th>
@@ -148,8 +141,9 @@
                                 <a class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can"></i></a>
                               </td>
                             </tr>
+                          </tbody>
                             <tr>
-                            <th colspan="2">GRAND TOTAL</th>
+                              <th colspan="2">GRAND TOTAL</th>
                               <th>2000000</th>
                               <th>2000000</th>
                               <th>2000000</th>
@@ -157,7 +151,6 @@
                               <th>2000000</th>
                               <th></th>
                             </tr>
-                          </tbody>
                       </table>
                       <button class="btn btn-success float-right mr-3" id="sucess">Submit</button>
                   </div>
