@@ -10,6 +10,6 @@ class souvenir_fnb extends Model
     use HasFactory;
     protected $table = 'souvenirfnb';
     protected $fillable = [
-        'item','kategori','harga_satuan','jumlah_penjualan','total','store', 'menu','setoran'
+        'item','kategori','harga_satuan','jumlah_penjualan','metode_pembayaran','total','store'
     ];
 }

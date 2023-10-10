@@ -7,7 +7,6 @@
                 <div class="card-body">
                     <div class="row g-3">
                         <div class="col-md-6">
-                        <!-- Kolom kiri dengan 5 input -->
                             <div class="form-group">
                                 <label>ID Item</label>
                                 <input type="text" class="form-control" id="iditem" placeholder="">
@@ -30,7 +29,6 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                        <!-- Kolom kanan dengan 5 input -->
                             <div class="form-group">
                                 <label>Section</label>
                                 <input type="text" class="form-control" id="section" placeholder="">
@@ -44,7 +42,7 @@
                                 <input type="text" class="form-control" id="hppcogs" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label">HPP Konsi</label>
+                                <label>HPP Konsi</label>
                                 <input type="text" class="form-control" id="hppkonsi" placeholder="">
                             </div>
                             <div class="form-group">

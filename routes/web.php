@@ -22,6 +22,7 @@ use App\Http\Controllers\master_usersController;
 use App\Http\Controllers\userpasswordController;
 use App\Http\Controllers\userprofileController;
 use App\Http\Controllers\rincianuangController;
+use App\Http\Controllers\edcController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -68,7 +69,7 @@ Route::get('/summaryglobal',['middleware' => 'guest',summary_globalController::c
 
 // Route::get('/laporanmenu',['middleware' => 'guest',menu_restoController::class, 'menuresto'])->name('laporanmenu');
 
-Route::get('/laporansetoran',['middleware' => 'guest',setoranController::class, 'setoran'])->name('laporansetoran');
+// Route::get('/laporansetoran',['middleware' => 'guest',setoranController::class, 'setoran'])->name('laporansetoran');
 
 Route::get('/login',['middleware' => 'guest',logoutController::class, 'login'])->name('login');
 
@@ -109,4 +110,7 @@ Route::get('/userpassword',['middleware' => 'guest',userpasswordController::clas
 
 //rincianuang
 Route::get('/rincianuang',['middleware' => 'guest',rincianuangController::class, 'rincianuang'])->name('rincianuang');
+
+//edc
+Route::get('/edc',['middleware' => 'guest',edcController::class, 'edc'])->name('edc');
 

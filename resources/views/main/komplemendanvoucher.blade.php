@@ -29,13 +29,13 @@
                         <table id="" class="table table-hover" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-                                <th scope="col">NO</th>
-                                    <th scope="col">KOMPLEMEN & VOUCHER</th>
-                                    <th scope="col">LOKASI</th>
-                                    <th scope="col">VOUCHER TL</th>
-                                    <th scope="col">KOMPLEMEN</th>
-                                    <th scope="col">TOTAL</th>
-                                    <th scope="col">KETERANGAN</th>
+                                    <th>NO</th>
+                                    <th>KOMPLEMEN & VOUCHER</th>
+                                    <th>LOKASI</th>
+                                    <th>VOUCHER TL</th>
+                                    <th>KOMPLEMEN</th>
+                                    <th>TOTAL</th>
+                                    <th>KETERANGAN</th>
                                 </tr>
                             </thead>
                             <tbody>

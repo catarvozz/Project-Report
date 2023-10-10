@@ -4,16 +4,12 @@
 <main class="content px-3 py-2">
     <div class="container-fluid">
         <div class="mb-3 mt-3">
-            <div class="container-fluid">
-                <h4>SOUVENIR AND F&B REPORT</h4>
-                <div class="d-flex justify-content-end">
-                    <div class="p-2">
-                        <div class="input-group date" id="datepicker">
-                            <input type="date" class="form-control" id="date" />
-                        </div>
-                    </div>
-                    <div class="p-2">
-                        <form id="search-form">
+            <h4>SOUVENIR AND F&B REPORT</h4>
+            <div class="d-flex justify-content-end">
+            <div class="p-2">
+                    <form action="" id="search-form">
+                        <div class="form-group d-flex">
+                            <input type="date" class="form-control mr-3" id="date" name="date" />
                             <select name="store" class="form-select" id="select-form">
                                 <option value="all" {{ $selectedStore == "all" ? 'selected' : '' }}>Choose...</option>
                                 <option value="VW Long FnB" {{ $selectedStore == "VW Long FnB" ? 'selected' : '' }}>VW Long FnB</option>
@@ -29,133 +25,171 @@
                                 <option value="Chiclin" {{ $selectedStore == "Chiclin" ? 'selected' : '' }}>Chiclin</option>
                             </select>
                             <noscript><button type="submit"></button></noscript>
-                        </form>
-                    </div>
-                    <div class="p-2">
-                        <div class="dropdown">
-                            <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-download"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Download as Excel</a></li>
-                                <li><a class="dropdown-item" href="#">Download as PDF</a></li>
-                            </ul>
                         </div>
+                    </form>
+                </div>
+                <div class="p-2">
+                    <div class="dropdown">
+                        <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Download as Excel</a></li>
+                            <li><a class="dropdown-item" href="#">Download as PDF</a></li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="card mb-5">
-                    <div class="card-body table-responsive">
-                        <table id="" class="table table-hover" cellspacing="0" width="100%">
-                            <thead>
-                                <tr>
-                                    <th scope="col">NO</th>
-                                    <th scope="col">ITEM</th>
-                                    <th scope="col">KATEGORI</th>
-                                    <th scope="col">HARGA SATUAN</th>
-                                    <th scope="col">JUMLAH PENJUALAN</th>
-                                    <th scope="col">TOTAL</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+            <div class="card mb-5">
+                <div class="card-body table-responsive">
+                    <table id="" class="table table-hover" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>NO</th>
+                                <th>ITEM</th>
+                                <th>KATEGORI</th>
+                                <th>HARGA SATUAN</th>
+                                <th>JUMLAH PENJUALAN</th>
+                                <th>METODE PEMBAYARAN</th>
+                                <th>TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                             @foreach ($reportsouvenirfnbs as $reportsouvenirfnb)
-                                <tr>
-                                    <th>{{ $number++ }}</th>
-                                    <td>{{ $reportsouvenirfnb->item }}</td>
-                                    <td>{{ $reportsouvenirfnb->kategori }}</td>
-                                    <td >{{ $reportsouvenirfnb->harga_satuan}}</td>
-                                    <td>{{ $reportsouvenirfnb->jumlah_penjualan}}</td>
-                                    <td>{{ $reportsouvenirfnb->total }}</td>
-                                </tr>
+                            <tr>
+                                <td>{{$number++}}</td>
+                                <td>{{$reportsouvenirfnb-> item}}</td>
+                                <td>{{$reportsouvenirfnb-> kategori}}</td>
+                                <td>{{$reportsouvenirfnb-> harga_satuan}}</td>
+                                <td>{{$reportsouvenirfnb-> jumlah_penjualan}}</td>
+                                <td>{{$reportsouvenirfnb-> metode_pembayaran}}</td>
+                                <td>{{$reportsouvenirfnb-> total}}</td>
+                            </tr>
                             @endforeach
-                                <tr>
-                                    <th colspan="5">TOTAL CASH</th>
-                                    <th>2000000</th>
-                                <tr>
-                                    <th colspan="5">TOTAL EDC</th>
-                                    <th>2000000</th>
-                                </tr> 
-                                <tr>
-                                    <th colspan="5">GRAND TOTAL</th>
-                                    <th>2000000</th>
-                                </tr>  
-                            </tbody>
-                        </table>
-                    </div>
+                            <tr>
+                                <th colspan="6">TOTAL CASH</th>
+                                <th>2000000</th>
+                            <tr>
+                                <th colspan="6">TOTAL EDC</th>
+                                <th>2000000</th>
+                            </tr> 
+                            <tr>
+                                <th colspan="6">GRAND TOTAL</th>
+                                <th>2000000</th>
+                            </tr>  
+                        </tbody>
+                    </table>
                 </div>
+            </div>
 
-                <h4>SETORAN</h4>
+            <h4>SETORAN</h4>
+            <div class="row">
+                <label class="col-sm-1">Kasir:</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="staticEmail" value="Hafiz">
+                </div>
+            </div>
+            <div class="card mb-5">
+                <div class="card-body table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                            <th>NO</th>
+                            <th>UANG SETORAN</th>
+                            <th>KETERANGAN</th>
+                            <th>JUMLAH</th>
+                            <th>TOTAL</th>
+                            <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <form action="">
+                            @foreach ($setoransouvenirfnbs as $setoransouvenirfnb)
+                                <tr>
+                                    <td>{{$number++}}</td>
+                                    <td>{{$setoransouvenirfnb-> uang_setoran}}</td>
+                                    <td>{{$setoransouvenirfnb-> keterangan}}</td>
+                                    <td>{{$setoransouvenirfnb-> jumlah}}</td>
+                                    <td>{{$setoransouvenirfnb-> total}}</td>
+                                    <td>
+                                        <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
+                                        <a href="#" class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can"></i></a>
+                                    </td>
+                                <tr>
+                                @endforeach
+                                <tr>
+                                    <th colspan="3">GRAND TOTAL</th>
+                                    <th>2000000</th>
+                                    <th></th>
+                                </tr> 
+                            </form>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <h4>ACTIVITY LOG</h4>
+            <div class="card mb-5">
+                <div class="card-body table-responsive">
                     <div class="row">
-                        <label class="col-sm-1">Kasir:</label>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" id="staticEmail" value="Hafiz">
+                        <div class="col-md-12 mb-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
+                                <div>
+                                    <h6>Carlos Sainz <small class="text-danger">6 Oktober 2023</small></h6>
+                                    <small>Mengedit setoran jumlah uang 50000 menjadi 7</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card mb-5">
-                        <div class="card-body table-responsive">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                    <th>UANG SETORAN</th>
-                                    <th>KETERANGAN</th>
-                                    <th>JUMLAH</th>
-                                    <th>TOTAL</th>
-                                    <th>ACTION</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <form action="">
-                                        <tr>
-                                            <td>100000</td>
-                                            <td>Kertas</td>
-                                            <td><input type="text" class="form-control col-3" id="100000"></td>
-                                            <td>200000</td>
-                                            <td>
-                                                <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
-                                                <a href="#" class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can"></i></a>
-                                            </td>
-                                        <tr>
-                                        <tr>
-                                            <td>75000</td>
-                                            <td>Kertas</td>
-                                            <td><input type="text" class="form-control col-3" id="100000"></td>
-                                            <td>200000</td>
-                                            <td>
-                                                <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
-                                                <a href="#" class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can"></i></a>
-                                            </td>
-                                        <tr>
-                                        <tr>
-                                            <td>50000</td>
-                                            <td>Kertas</td>
-                                            <td><input type="text" class="form-control col-3" id="100000"></td>
-                                            <td>200000</td>
-                                            <td>
-                                                <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
-                                                <a href="#" class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can"></i></a>
-                                            </td>
-                                        <tr>
-                                        <tr>
-                                            <th colspan="2">GRAND TOTAL</th>
-                                            <th>200</th>
-                                            <th>2000000</th>
-                                            <th></th>
-                                        </tr> 
-                                    </form>
-                                </tbody>
-                            </table>
-                            <a href="#" class="btn btn-success mt-3 mr-3 float-right text-white" id="sucess">Submit</a>
+                    <div class="row">
+                        <div class="col-md-12 mb-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
+                                <div>
+                                    <h6>Max Verstappen <small class="text-danger">6 Oktober 2023</small></h6>
+                                    <small>Mengedit setoran jumlah uang 50000 menjadi 7</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
+                                <div>
+                                    <h6>Lando Norris <small class="text-danger">6 Oktober 2023</small></h6>
+                                    <small>Mengedit setoran jumlah uang 10000 menjadi 3</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <script>
-        const form = document.getElementById('search-form');
-        const dropdown = document.getElementById('select-form');
-        dropdown.addEventListener('change', function() {
-            form.submit();
-        });
+              const selectForm = document.getElementById('search-form');
+              const selectDropdown = document.getElementById('select-form');
+              const dateDropdown = document.getElementById('date');
+              selectDropdown.addEventListener('change', function() {
+                selectForm.submit();
+              });
+              dateDropdown.addEventListener('change', function() {
+                selectForm.submit();
+              });
+        </script>
+        <script>
+            function getUrlParameter(date) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(date);
+            }
+            const dateParam = getUrlParameter('date');
+            if (dateParam) {
+                document.getElementById('date').value = dateParam;
+            }
         </script>
     </div>
 </main>

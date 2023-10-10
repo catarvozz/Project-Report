@@ -10,7 +10,7 @@ class setoran extends Model
     use HasFactory;
     protected $table = 'setoran';
     protected $fillable = [
-        'uang_setoran','keterangan','jumlah','total'
+        'uang_setoran','keterangan','jumlah','total','store'
     ];
 
 }

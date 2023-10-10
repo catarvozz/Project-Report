@@ -10,5 +10,5 @@ class all_ticketing extends Model
     use HasFactory;
     protected $table = 'all_ticketing';
     protected $fillable = [
-        'pengunjung','harga_satuan','total_tiket','saldo_awal','total_bayar', 'tipe_pembayaran', 'kasir'];
+        'produk','harga_satuan','total_tiket','saldo_awal','metodepayment', 'total', 'kasir'];
 }

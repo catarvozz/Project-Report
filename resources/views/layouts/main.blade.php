@@ -70,9 +70,12 @@
                             <div class="collapse menu" id="menu4">
                                 <ul>
                                     <li>
-                                        <li class="dropdown">
+                                        <li>
+                                            <a href="{{ route('allglobal') }}">All Global</a>
+                                        </li>
+                                        <!-- <li class="dropdown">
                                             <a href="#submenu1" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                            Global >></a>
+                                            Global</a>
                                             <div class="collapse submenu" id="submenu1">
                                                 <ul>
                                                     <li>
@@ -89,31 +92,35 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </li>
-                                    </li>
+                                        </li> -->
 
-                                    <li class="dropdown">
-                                            <a href="#submenu2" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                            IR Dept >></a>
-                                            <div class="collapse submenu" id="submenu2">
-                                                <ul>
-                                                    <li>
-                                                        <a href="{{ route('allirdept') }}">All IR Dept</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="{{ route('allirdeptsummary') }}">Revenue Summary IR Dept</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </li>
+                                        <!-- <li class="dropdown">
+                                                <a href="#submenu2" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                                IR Dept >></a>
+                                                <div class="collapse submenu" id="submenu2">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="{{ route('allirdept') }}">All IR Dept</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ route('allirdeptsummary') }}">Revenue Summary IR Dept</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </li> -->
 
-                                    <li>
-                                        <a href="{{ route('rincianuang') }}">Rincian Uang</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('allsummary') }}">All Summary</a>
-                                    </li>
+                                        <li>
+                                            <a href="{{ route('edc') }}">EDC Report</a>
+                                        </li>
+
+                                        <!-- <li>
+                                            <a href="{{ route('rincianuang') }}">Rincian Uang</a>
+                                        </li> -->
+
+                                        <!-- <li>
+                                            <a href="{{ route('allsummary') }}">All Summary</a>
+                                        </li> -->
                                     </li>
                                 </ul>
                             </div>
@@ -136,9 +143,6 @@
                                 </ul>
                             </div>
                         </li>
-                        <!-- <li class="nav-item hidelogout">
-                            <a href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
-                        </li> -->
                     </ul>  
                 </ul>
             </nav>
@@ -158,7 +162,6 @@
                         <i class="fa-solid fa-bars"></i>
                         </button>
 
-                        <!-- <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none mr-5" id="navbarSupportedContent"> -->
                         <div>
                             <ul class="nav navbar-nav ml-auto flex-row position-relative">
                                 <li class="dropdown nav-item position-static">

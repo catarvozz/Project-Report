@@ -596,6 +596,11 @@ tr #textcenter {
     border-radius: 10px;
 }
 
+#accordionPanelsStayOpenExample {
+    border-radius: 6px;
+    box-shadow: 6px 8px 12px 6px rgba(0, 0, 0, 0.2);
+}
+
 /* menyembunyikan menu log out di sidebar ketika layar membesar */
   /* @media (min-width: 992px) {
     #sidebar li.hidelogout {
@@ -617,4 +622,9 @@ tr #textcenter {
 
  .btn-primary {
     background-color: #1e56af;
+ }
+
+ #hrborder {
+    border: 10px solid #169870;
+    border-radius: 5px;
  }

@@ -29,11 +29,11 @@
                         <table id="" class="table table-hover" width="100%">
                             <thead>
                                 <tr>
-                                    <th scope="col">NO</th>
-                                    <th scope="col">BANK</th>
-                                    <th scope="col">DEBIT</th>
-                                    <th scope="col">KREDIT</th>
-                                    <th scope="col">QRIS</th>
+                                    <th>NO</th>
+                                    <th>BANK</th>
+                                    <th>DEBIT</th>
+                                    <th>KREDIT</th>
+                                    <th>QRIS</th>
                                 </tr>
                             </thead>
                             <tbody>

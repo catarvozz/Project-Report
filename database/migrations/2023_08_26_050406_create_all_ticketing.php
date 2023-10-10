@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('all_ticketing', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('pengunjung', 255);
+            $table->string('produk', 255);
             $table->string('harga_satuan', 255);
             $table->string('total_tiket', 255);
             $table->string('saldo_awal', 255);
-            $table->string('total_bayar', 255);
-            $table->string('tipe_pembayaran', 255);
+            $table->string('metodepayment', 255);
+            $table->string('total', 255);
             $table->string('kasir', 255);
             $table->timestamps();
         });
