@@ -140,6 +140,9 @@
                                     <li>
                                         <a href="{{ route('masteritems') }}">Items</a>
                                     </li>
+                                    <li>
+                                        <a href="{{ route('masterkategori') }}">Kategori</a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -274,11 +277,14 @@
                     Swal.fire({
                     title: 'Are you sure?',
                     text: "You won't be able to revert this!",
-                    icon: 'warning',
+                    imageUrl: '../../../../img/lokasad.webp',
+                    imageWidth: 150,
+                    imageHeight: 150,
+                    imageAlt: 'Custom image',
                     showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
                     cancelButtonColor: '#d33',
-                    confirmButtonText: 'Yes, delete it!'
+                    confirmButtonColor: '#1e56af',
+                    confirmButtonText: 'Yes, delete it!',
                     }).then((result) => {
                     if (result.isConfirmed) {
                         Swal.fire(
@@ -291,12 +297,15 @@
                 })
             });
             $(function(){
-                $(document).on('click','#sucess', function(e){
+                $(document).on('click','#success', function(e){
                     e.preventDefault();
                     var link = $(this).attr("href")
                     Swal.fire({
-                    icon: 'success',
-                    title: 'Your work has been submitted',
+                    title: 'Your work has been submitted!',
+                    imageUrl: '../../../../img/lokasip.webp',
+                    imageWidth: 150,
+                    imageHeight: 150,
+                    imageAlt: 'Custom image',
                     showConfirmButton: false,
                     timer: 1500
                     })

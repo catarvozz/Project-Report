@@ -23,6 +23,7 @@ use App\Http\Controllers\userpasswordController;
 use App\Http\Controllers\userprofileController;
 use App\Http\Controllers\rincianuangController;
 use App\Http\Controllers\edcController;
+use App\Http\Controllers\masterkategoriController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -113,4 +114,10 @@ Route::get('/rincianuang',['middleware' => 'guest',rincianuangController::class,
 
 //edc
 Route::get('/edc',['middleware' => 'guest',edcController::class, 'edc'])->name('edc');
+
+//masterkategori
+Route::get('/masterkategori',['middleware' => 'guest',masterkategoriController::class, 'masterkategori'])->name('masterkategori');
+
+//formmasterkategori
+Route::get('/formmasterkategori',['middleware' => 'guest',masterkategoriController::class, 'formmasterkategori'])->name('formmasterkategori');
 

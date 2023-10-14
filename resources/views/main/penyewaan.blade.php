@@ -130,7 +130,7 @@
                                 <tr>
                                     <td>50000</td>
                                     <td>Kertas</td>
-                                    <td>4</td>
+                                    <td><input type="text" class="form-control col-3" value="4"></td>
                                     <td>200000</td>
                                     <td>
                                         <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
@@ -157,7 +157,7 @@
                                 <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
                                 <div>
                                     <h6>Carlos Sainz <small class="text-danger">6 Oktober 2023</small></h6>
-                                    <small>Menambahkan jumlah penyewaan jadi 4</small>
+                                    <small>Edit jumlah uang 100000 menjadi 4 pada 16.00</small>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                                 <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
                                 <div>
                                     <h6>Max Verstappen <small class="text-danger">6 Oktober 2023</small></h6>
-                                    <small>Mengedit setoran jumlah uang 50000 menjadi 7</small>
+                                    <small>Edit jumlah uang 100000 menjadi 4 pada 16.00</small>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@
                                 <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
                                 <div>
                                     <h6>Lando Norris <small class="text-danger">6 Oktober 2023</small></h6>
-                                    <small>Mengedit setoran jumlah uang 10000 menjadi 3</small>
+                                    <small>Submit setoran pada 16.00</small>
                                 </div>
                             </div>
                         </div>

@@ -115,8 +115,9 @@
                           </tr>
                           @endforeach
                           <tr>
-                            <th colspan="6">GRAND TOTAL</th>
+                            <th colspan="5">GRAND TOTAL</th>
                             <th>2000000</th>
+                            <th></th>
                           </tr>
                         </tbody>
                     </table>
@@ -132,7 +133,7 @@
                                 <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
                                 <div>
                                     <h6>Carlos Sainz <small class="text-danger">6 Oktober 2023</small></h6>
-                                    <small>Mengedit setoran jumlah uang 100000 menjadi 4</small>
+                                    <small>Edit jumlah uang 100000 menjadi 4 pada 16.00</small>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +144,7 @@
                                 <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
                                 <div>
                                     <h6>Max Verstappen <small class="text-danger">6 Oktober 2023</small></h6>
-                                    <small>Mengedit setoran jumlah uang 50000 menjadi 7</small>
+                                    <small>Edit jumlah uang 100000 menjadi 4 pada 16.00</small>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +156,7 @@
                                 <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
                                 <div>
                                     <h6>Lando Norris <small class="text-danger">6 Oktober 2023</small></h6>
-                                    <small>Mengedit setoran jumlah uang 10000 menjadi 3</small>
+                                    <small>Submit setoran pada 16.00</small>
                                 </div>
                             </div>
                         </div>

@@ -177,7 +177,7 @@
                                 <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
                                 <div>
                                     <h6>Lando Norris <small class="text-danger">6 Oktober 2023</small></h6>
-                                    <small>Mengedit setoran jumlah uang 10000 menjadi 3</small>
+                                    <small>Edit jumlah uang 100000 menjadi 4 pada 16.00</small>
                                 </div>
                             </div>
                         </div>

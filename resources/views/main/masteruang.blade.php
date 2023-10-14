@@ -7,11 +7,6 @@
         <h3>Master Pecahan Uang</h3>
         <div class="d-flex justify-content-end">
             <div class="p-2">
-                <div class="input-group date" id="datepicker">
-                    <input type="date" class="form-control" id="date" />
-                </div>
-            </div>
-            <div class="p-2">
                 <div class="dropdown">
                     <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-download"></i>

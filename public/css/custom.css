@@ -624,6 +624,11 @@ tr #textcenter {
     background-color: #1e56af;
  }
 
+ .btn-primary #cokelat {
+    color: #bf9860;
+    background-color: #bf9860;
+ }
+
  #hrborder {
     border: 10px solid #169870;
     border-radius: 5px;

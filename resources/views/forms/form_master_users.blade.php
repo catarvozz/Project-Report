@@ -28,7 +28,7 @@
                         </select>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-outline-success">Create</button>
+                        <a href="{{ route('masterusers') }}" class="btn btn-success float-right text-white">Submit</a>
                     </div>
                     </form>
                     </div>
