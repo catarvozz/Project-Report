@@ -1,29 +1,5 @@
 <?php
-use App\Http\Controllers\dashboardController;
-use App\Http\Controllers\all_globalController;
-use App\Http\Controllers\all_irdeptController;
-use App\Http\Controllers\all_irdeptsumController;
-use App\Http\Controllers\all_sumController;
-use App\Http\Controllers\all_ticketingController;
-use App\Http\Controllers\all_summaryController;
-use App\Http\Controllers\edc_globalController;
-use App\Http\Controllers\komplemen_voucherController;
-use App\Http\Controllers\souvenir_fnbController;
-use App\Http\Controllers\penyewaanController;
-use App\Http\Controllers\penjualan_lainController;
-use App\Http\Controllers\logoutController;
-use App\Http\Controllers\summary_ticketingController;
-use App\Http\Controllers\summary_globalController;
-use App\Http\Controllers\menu_restoController;
-use App\Http\Controllers\setoranController;
-use App\Http\Controllers\master_itemsController;
-use App\Http\Controllers\master_pecahanuangsController;
-use App\Http\Controllers\master_usersController;
-use App\Http\Controllers\userpasswordController;
-use App\Http\Controllers\userprofileController;
-use App\Http\Controllers\rincianuangController;
-use App\Http\Controllers\edcController;
-use App\Http\Controllers\masterkategoriController;
+use App\Http\Controllers\mainController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -42,82 +18,94 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/welcome',['middleware' => 'guest',dashboardController::class, 'index'])->name('welcome');
+Route::get('/welcome',['middleware' => 'guest',mainController::class, 'index'])->name('welcome');
 
-Route::get('/allglobal',['middleware' => 'guest',all_globalController::class, 'allglobal'])->name('allglobal');
+Route::get('/allglobal',['middleware' => 'guest',mainController::class, 'allglobal'])->name('allglobal');
 
-Route::get('/allirdept',['middleware' => 'guest',all_irdeptController::class, 'allirdept'])->name('allirdept');
+Route::get('/allirdept',['middleware' => 'guest',mainController::class, 'allirdept'])->name('allirdept');
 
-Route::get('/allirdeptsummary',['middleware' => 'guest',all_irdeptsumController::class, 'allirdeptsummary'])->name('allirdeptsummary');
+Route::get('/allirdeptsummary',['middleware' => 'guest',mainController::class, 'allirdeptsummary'])->name('allirdeptsummary');
 
-Route::get('/allsummary',['middleware' => 'guest',all_summaryController::class, 'allsummary'])->name('allsummary');
+Route::get('/allsummary',['middleware' => 'guest',mainController::class, 'allsummary'])->name('allsummary');
 
-Route::get('/allticketing',['middleware' => 'guest',all_ticketingController::class, 'allticketing'])->name('allticketing');
+Route::get('/allticketing',['middleware' => 'guest',mainController::class, 'allticketing'])->name('allticketing');
 
-Route::get('/edcglobal',['middleware' => 'guest',edc_globalController::class, 'edcglobal'])->name('edcglobal');
+Route::get('/edcglobal',['middleware' => 'guest',mainController::class, 'edcglobal'])->name('edcglobal');
 
-Route::get('/komplemenvoucher',['middleware' => 'guest',komplemen_voucherController::class, 'komplemendanvoucher'])->name('komplemenvoucher');
+Route::get('/komplemenvoucher',['middleware' => 'guest',mainController::class, 'komplemendanvoucher'])->name('komplemenvoucher');
 
-Route::get('/souvenirfnb',['middleware' => 'guest',souvenir_fnbController::class, 'souvenirfnb'])->name('souvenirfnb');
+Route::get('/souvenirfnb',['middleware' => 'guest',mainController::class, 'souvenirfnb'])->name('souvenirfnb');
 
-Route::get('/penyewaan',['middleware' => 'guest',penyewaanController::class, 'index'])->name('penyewaan');
+Route::get('/penyewaan',['middleware' => 'guest',mainController::class, 'penyewaan'])->name('penyewaan');
 
-Route::get('/penjualanlain',['middleware' => 'guest',penjualan_lainController::class, 'index'])->name('penjualanlain');
+Route::get('/penjualanlain',['middleware' => 'guest',mainController::class, 'penjualanlain'])->name('penjualanlain');
 
-Route::get('/summaryticketing',['middleware' => 'guest',summary_ticketingController::class, 'summaryticketing'])->name('summaryticketing');
+Route::get('/summaryticketing',['middleware' => 'guest',mainController::class, 'summaryticketing'])->name('summaryticketing');
 
-Route::get('/summaryglobal',['middleware' => 'guest',summary_globalController::class, 'revenuesummary'])->name('summaryglobal');
+Route::get('/summaryglobal',['middleware' => 'guest',mainController::class, 'revenuesummary'])->name('summaryglobal');
 
 // Route::get('/laporanmenu',['middleware' => 'guest',menu_restoController::class, 'menuresto'])->name('laporanmenu');
 
 // Route::get('/laporansetoran',['middleware' => 'guest',setoranController::class, 'setoran'])->name('laporansetoran');
 
-Route::get('/login',['middleware' => 'guest',logoutController::class, 'login'])->name('login');
+Route::get('/login',['middleware' => 'guest',mainController::class, 'login'])->name('login');
 
-Route::get('/masterusers',['middleware' => 'guest',master_usersController::class, 'masterusers'])->name('masterusers');
+Route::get('/masterusers',['middleware' => 'guest',mainController::class, 'masterusers'])->name('masterusers');
 
-Route::get('/formmasterusers',['middleware' => 'guest',master_usersController::class, 'formmasterusers'])->name('formmasterusers');
+Route::get('/formmasterusers',['middleware' => 'guest',mainController::class, 'formmasterusers'])->name('formmasterusers');
 
-Route::get('/masterpecahanuangs',['middleware' => 'guest',master_pecahanuangsController::class, 'masterpecahanuangs'])->name('masterpecahanuangs');
+Route::get('/masterpecahanuangs',['middleware' => 'guest',mainController::class, 'masterpecahanuangs'])->name('masterpecahanuangs');
 
-Route::get('/formmasterpecahanuangs',['middleware' => 'guest',master_pecahanuangsController::class, 'formmasterpecahanuangs'])->name('formmasterpecahanuangs');
+Route::get('/formmasterpecahanuangs',['middleware' => 'guest',mainController::class, 'formmasterpecahanuangs'])->name('formmasterpecahanuangs');
 
-Route::get('/masteritems',['middleware' => 'guest',master_itemsController::class, 'masteritems'])->name('masteritems');
+Route::get('/masteritems',['middleware' => 'guest',mainController::class, 'masteritems'])->name('masteritems');
 
-Route::get('/formmasteritems',['middleware' => 'guest',master_itemsController::class, 'formmasteritems'])->name('formmasteritems');
+Route::get('/formmasteritems',['middleware' => 'guest',mainController::class, 'formmasteritems'])->name('formmasteritems');
 
 // route CRUD
-Route::get('/penjualanlain/forminsert',['middleware' => 'guest',penjualan_lainController::class, 'penjualanlaininsert'])->name('forminsert');
+Route::get('/penjualanlain/forminsert',['middleware' => 'guest',mainController::class, 'penjualanlaininsert'])->name('forminsert');
 
-Route::post('/penjualanlain/penjualanlainstore',['middleware' => 'guest',penjualan_lainController::class, 'penjualanlainstore'])->name('penjualanlainstore');
+Route::post('/penjualanlain/penjualanlainstore',['middleware' => 'guest',mainController::class, 'penjualanlainstore'])->name('penjualanlainstore');
 
-Route::get('/penjualanlain/penjualanlainedit/{reportsetoranpenjualanlain}',['middleware' => 'guest',penjualan_lainController::class, 'penjualanlainedit'])->name('penjualanlainedit');
+Route::get('/penjualanlain/penjualanlainedit/{reportsetoranpenjualanlain}',['middleware' => 'guest',mainController::class, 'penjualanlainedit'])->name('penjualanlainedit');
 
-Route::post('/penjualanlain/penjualanlainupdate/{reportsetoranpenjualanlain}',['middleware' => 'guest',penjualan_lainController::class, 'penjualanlainupdate'])->name('penjualanlainupdate');
+Route::post('/penjualanlain/penjualanlainupdate/{reportsetoranpenjualanlain}',['middleware' => 'guest',mainController::class, 'penjualanlainupdate'])->name('penjualanlainupdate');
 
 
-Route::get('/penyewaan/forminsertpenyewaan',['middleware' => 'guest',penyewaanController::class, 'penyewaaninsert'])->name('forminsertpenyewaan');
+Route::get('/penyewaan/forminsertpenyewaan',['middleware' => 'guest',mainController::class, 'penyewaaninsert'])->name('forminsertpenyewaan');
 
-Route::post('/penyewaan/penyewaanstore',['middleware' => 'guest',penyewaanController::class, 'penyewaanstore'])->name('penyewaanstore');
+Route::post('/penyewaan/penyewaanstore',['middleware' => 'guest',mainController::class, 'penyewaanstore'])->name('penyewaanstore');
 
-Route::get('/penyewaan/penyewaanedit/{reportsetoranpenyewaan}',['middleware' => 'guest',penyewaanController::class, 'penyewaanedit'])->name('penyewaanedit');
+Route::get('/penyewaan/penyewaanedit/{reportsetoranpenyewaan}',['middleware' => 'guest',mainController::class, 'penyewaanedit'])->name('penyewaanedit');
 
-Route::post('/penyewaan/penyewaanupdate/{reportsetoranpenyewaan}',['middleware' => 'guest',penyewaanController::class, 'penyewaanupdate'])->name('penyewaanupdate');
+Route::post('/penyewaan/penyewaanupdate/{reportsetoranpenyewaan}',['middleware' => 'guest',mainController::class, 'penyewaanupdate'])->name('penyewaanupdate');
 
 // profile
-Route::get('/userprofile',['middleware' => 'guest',userprofileController::class, 'userprofile'])->name('userprofile');
+Route::get('/userprofile',['middleware' => 'guest',mainController::class, 'userprofile'])->name('userprofile');
 
-Route::get('/userpassword',['middleware' => 'guest',userpasswordController::class, 'userpassword'])->name('userpassword');
+Route::get('/userpassword',['middleware' => 'guest',mainController::class, 'userpassword'])->name('userpassword');
 
 //rincianuang
-Route::get('/rincianuang',['middleware' => 'guest',rincianuangController::class, 'rincianuang'])->name('rincianuang');
+Route::get('/rincianuang',['middleware' => 'guest',mainController::class, 'rincianuang'])->name('rincianuang');
 
 //edc
-Route::get('/edc',['middleware' => 'guest',edcController::class, 'edc'])->name('edc');
+Route::get('/edc',['middleware' => 'guest',mainController::class, 'edc'])->name('edc');
 
 //masterkategori
-Route::get('/masterkategori',['middleware' => 'guest',masterkategoriController::class, 'masterkategori'])->name('masterkategori');
+Route::get('/masterkategori',['middleware' => 'guest',mainController::class, 'masterkategori'])->name('masterkategori');
 
 //formmasterkategori
-Route::get('/formmasterkategori',['middleware' => 'guest',masterkategoriController::class, 'formmasterkategori'])->name('formmasterkategori');
+Route::get('/formmasterkategori',['middleware' => 'guest',mainController::class, 'formmasterkategori'])->name('formmasterkategori');
+
+//formeditmasteruser
+Route::get('/formeditmasteruser',['middleware' => 'guest',mainController::class, 'editusers'])->name('formeditmasteruser');
+
+//formeditmasteruang
+Route::get('/formeditmasteruang',['middleware' => 'guest',mainController::class, 'edituangs'])->name('formeditmasteruang');
+
+//formeditmasteritem
+Route::get('/formeditmasteritem',['middleware' => 'guest',mainController::class, 'edititems'])->name('formeditmasteritem');
+
+//formeditmasterkategori
+Route::get('/formeditmasterkategori',['middleware' => 'guest',mainController::class, 'editkategori'])->name('formeditmasterkategori');
 

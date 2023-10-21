@@ -630,6 +630,138 @@ tr #textcenter {
  }
 
  #hrborder {
-    border: 10px solid #169870;
+    border: 10px solid #bf9860;
     border-radius: 5px;
  }
+
+.custom-title {
+    font-size: 30px;
+    display: block;
+}
+
+#custom-image {
+    width: 150px;
+    height: 150px;
+}
+
+.custom-popup-class {
+    width: 400px;
+    height: 350px;
+}
+
+/* #redstrip {
+    background-color: #f45049;
+    color: white;
+}
+
+#woodstrip {
+    background-color: #bf9860;
+    color: white;
+}
+
+#yellowstrip {
+    background-color: #F39F19;
+    color: white;
+}
+
+#bluestrip {
+    background-color: #4b78bf;
+    color: white;
+} */
+
+@media only screen and (min-width: 320px) and (max-width: 428px) {
+    #title {
+        font-size: 20px;
+    }
+    #date {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+        margin: 0;
+    }
+    #select-form {
+        width: 105px;
+        height: 40px;
+        font-size: 12px;
+    }
+    #buttondownload {
+        width: 40px;
+        height: 40px;
+    }
+    .fa-download {
+        font-size: 17px;
+    }
+    th, td {
+        font-size: 12px;
+    }
+    #edit {
+        width: 20px;
+        height: 20px;
+    }
+    #delete {
+        width: 20px;
+        height: 20px;
+    }
+    #smallpen{
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+    }
+    #smalltrash{
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+    }
+    small {
+        font-size: 11px;
+    }
+    h6 {
+        font-size: 11px;
+    }
+    .smallsubmit {
+        font-size: 12px;
+        width: 70px;
+        height: 30px; 
+    }
+    #buttonsearch {
+        width: 40px;
+        height: 40px;
+    }
+    #buttonadd {
+        width: 40px;
+        height: 40px;
+    }
+    .fa-magnifying-glass {
+        font-size: 17px;
+    }
+    .fa-plus {
+        font-size: 20px;
+    }
+
+    footer span {
+        font-size: 12px;
+    }
+    .custom-popup-class {
+        width: 150px;
+        height: 200px;
+    }
+      
+    #custom-image {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .custom-content {
+        text-align: center;
+    }
+    
+    .custom-title {
+        font-size: 14px;
+        display: block;
+    }
+    /* #hrborder {
+        border: 10px solid #bf9860;
+        border-radius: 5px;
+        width: 150%;
+     }       */
+}

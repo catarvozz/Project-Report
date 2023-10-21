@@ -1,34 +1,30 @@
 @extends('layouts/main')
 
 @section('container')
-<main class="content px-3 py-2">
+<main class="content">
     <div class="container-fluid">
         <div class="mb-3 mt-3">
-            <h4>ALL TICKETING REPORT</h4>
-            <div class="d-flex justify-content-end">
-                <div class="p-2">
-                    <form action="" id="search-form">
-                        <div class="form-group d-flex">
-                            <input type="date" class="form-control mr-3" id="date" name="date" />
-                            <select name="kasir" class="form-select" id="select-form">
-                                <option value="all" {{ $selectedKasir == "all" ? 'selected' : '' }}>Choose...</option>
-                                <option value="reza" {{ $selectedKasir == "reza" ? 'selected' : '' }}>Kasir-Reza</option>
-                                <option value="desi" {{ $selectedKasir == "desi" ? 'selected' : '' }}>Kasir-Desi</option>
-                                <option value="banu" {{ $selectedKasir == "banu" ? 'selected' : '' }}>Kasir-Banu</option>
-                            </select>
-                            <noscript><button type="submit"></button></noscript>
-                        </div>
-                    </form>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="d-flex">
+                    <h4 class="mb-0" id="title">ALL TICKETING REPORT</h4>
                 </div>
-
-                <div class="p-2">
+                <div class="d-flex flex-row mt-3 mt-md-0">
+                    <form action="" id="search-form" class="d-flex">
+                        <input type="date" class="form-control mr-2" id="date" name="date" />
+                        <select name="kasir" class="form-select mr-2" id="select-form">
+                            <option value="all" {{ $selectedKasir == "all" ? 'selected' : '' }}>Kasir...</option>
+                            <option value="reza" {{ $selectedKasir == "reza" ? 'selected' : '' }}>Kasir-Reza</option>
+                            <option value="desi" {{ $selectedKasir == "desi" ? 'selected' : '' }}>Kasir-Desi</option>
+                            <option value="banu" {{ $selectedKasir == "banu" ? 'selected' : '' }}>Kasir-Banu</option>
+                        </select>
+                    </form>
                     <div class="dropdown">
-                        <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-download"></i>
+                        <button class="btn btn-primary text-white dropdown-toggle" id="buttondownload" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-download"></i>
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Download as Excel</a></li>
-                            <li><a class="dropdown-item" href="#">Download as PDF</a></li>
+                            <li><a class= "dropdown-item" href="#">Download as PDF</a></li>
                         </ul>
                     </div>
                 </div>
@@ -37,7 +33,7 @@
             <div class="card mb-5">
                 <div class="card-body table-responsive">
                     <table class="table table-hover" cellspacing="0" width="100%" id="data-table">
-                        <thead>
+                        <thead id="redstrip">
                           <tr>
                             <th>NO</th>
                             <th>PRODUK</th>
@@ -84,11 +80,11 @@
                 </div>
             </div>
 
-            <h4>SETORAN TICKET</h4>
+            <h4 id="title">SETORAN TICKET</h4>
             <div class="card mb-5">
                 <div class="card-body table-responsive">
                     <table class="table table-hover">
-                        <thead>
+                        <thead id="redstrip">
                           <tr>
                             <th>NO</th>
                             <th>KASIR</th>
@@ -96,7 +92,7 @@
                             <th>KETERANGAN</th>
                             <th>JUMLAH</th>
                             <th>TOTAL</th>
-                            <th>ACTION</th>
+                            <th colspan="2">ACTION</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -108,10 +104,8 @@
                             <td>{{$setoranticketing-> keterangan}}</td>
                             <td>{{$setoranticketing-> jumlah_uang}}</td>
                             <td>{{$setoranticketing-> total_uang}}</td>
-                            <td>
-                              <a class="btn btn-warning text-white btn-sm"><i class="fa-solid fa-pen-to-square white"></i></a>
-                              <a class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can"></i></a>
-                            </td>
+                            <td><a class="btn btn-warning text-white btn-sm" id="edit"><i class="fa-solid fa-pen-to-square" id="smallpen"></i></a></td>
+                            <td><a class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can" id="smalltrash"></i></a></td>
                           </tr>
                           @endforeach
                           <tr>
@@ -124,15 +118,15 @@
                 </div>
             </div>
 
-            <h4>ACTIVITY LOG</h4>
-            <div class="card mb-5">
+            <h4 id="title">ACTIVITY LOG</h4>
+            <div class="card mt-3 mb-5">
                 <div class="card-body table-responsive">
                     <div class="row">
                         <div class="col-md-12 mb-4">
                             <div class="d-flex align-items-center">
-                                <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
+                                <img src="../../../../img/lokasip.webp" alt="" style="border-radius:"50%"; width="40px"; height="40px" class="mr-2">
                                 <div>
-                                    <h6>Carlos Sainz <small class="text-danger">6 Oktober 2023</small></h6>
+                                    <h6>Sebs Vettel <small class="text-danger">8 Oktober 2023</small></h6>
                                     <small>Edit jumlah uang 100000 menjadi 4 pada 16.00</small>
                                 </div>
                             </div>
@@ -141,9 +135,9 @@
                     <div class="row">
                         <div class="col-md-12 mb-4">
                             <div class="d-flex align-items-center">
-                                <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
+                                <img src="../../../../img/lokasip.webp" alt="" style="border-radius:"50%"; width="40px"; height="40px" class="mr-2">
                                 <div>
-                                    <h6>Max Verstappen <small class="text-danger">6 Oktober 2023</small></h6>
+                                    <h6>Lewis Hamilton <small class="text-danger">7 Oktober 2023</small></h6>
                                     <small>Edit jumlah uang 100000 menjadi 4 pada 16.00</small>
                                 </div>
                             </div>
@@ -153,9 +147,9 @@
                     <div class="row">
                         <div class="col-md-12 mb-4">
                             <div class="d-flex align-items-center">
-                                <i class="fa-regular fa-circle-user mr-3" style="color: #169870; font-size: 35px" id="iconlog"></i>
+                                <img src="../../../../img/lokasip.webp" alt="" style="border-radius:"50%"; width="40px"; height="40px" class="mr-2">
                                 <div>
-                                    <h6>Lando Norris <small class="text-danger">6 Oktober 2023</small></h6>
+                                    <h6>Kimi Raikkonen <small class="text-danger">6 Oktober 2023</small></h6>
                                     <small>Submit setoran pada 16.00</small>
                                 </div>
                             </div>

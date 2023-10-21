@@ -4,14 +4,31 @@
 <main class="content px-3 py-2">
     <div class="container-fluid">
         <div class="mb-3 mt-3">
-            <h4>PENJUALAN TIKET REPORT</h4>
-            <div class="d-flex justify-content-end">
-                <div class="p-2">
-                    <div class="input-group date" id="datepicker">
-                        <input type="date" class="form-control" id="date" />
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="d-flex">
+                    <h4 class="mb-0" id="title">PENJUALAN TICKET REPORT</h4>
+                </div>
+                <div class="d-flex flex-row mt-3 mt-md-0">
+                    <form action="" id="search-form" class="d-flex">
+                        <input type="date" class="form-control mr-2" id="date" name="date" />
+                    </form>
+                    <div class="dropdown">
+                        <button class="btn btn-primary text-white dropdown-toggle" id="buttondownload" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Download as Excel</a></li>
+                            <li><a class= "dropdown-item" href="#">Download as PDF</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="p-2">
+            </div>
+            <!-- <div class="d-flex justify-content-between align-items-center">
+                <h4 class="mb-0" id="title">PENJUALAN TICKET REPORT</h4>
+                <div class="d-flex">
+                    <form action="" id="search-form" class="d-flex">
+                        <input type="date" class="form-control mr-3" id="date" name="date" />
+                    </form>
                     <div class="dropdown">
                         <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-download"></i>
@@ -22,13 +39,13 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="container-fluid">
                 <div class="card mb-5">
                     <div class="card-body table-responsive">
                         <table id="" class="table table-hover" cellspacing="0" width="100%">
-                            <thead>
+                            <thead id="redstrip">
                                 <tr>
                                     <th></th>
                                     <th style="text-align: center" colspan="2">SALES</th>

@@ -3,17 +3,16 @@
 @section('container')
 <main class="content px-3 py-2">
     <div class="container-fluid">
-        <h2>Dashboard</h2>
-        <div class="row justify-content-end">
-            <div class="col-2">
-                <div class="input-group date" id="datepicker">
-                    <input type="date" class="form-control" id="date" 
-                    value=
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="mb-0" id="title">Dashboard</h1>
+            <div class="d-flex">
+                <form action="" id="search-form" class="d-flex">
+                    <input type="date" class="form-control mr-3" id="date" name="date" value=
                     "<?php
                     $oneDayAgo = date('Y-m-d', strtotime('-1 day'));
                     echo $oneDayAgo;
                     ?>"/>
-                </div>
+                </form>
             </div>
         </div>
         <div class="row">

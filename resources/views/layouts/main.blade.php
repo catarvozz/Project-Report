@@ -289,7 +289,7 @@
                     if (result.isConfirmed) {
                         Swal.fire(
                         'Deleted!',
-                        'Your file has been deleted.',
+                        'Your report has been deleted.',
                         'success'
                         )
                     }
@@ -301,13 +301,12 @@
                     e.preventDefault();
                     var link = $(this).attr("href")
                     Swal.fire({
-                    title: 'Your work has been submitted!',
-                    imageUrl: '../../../../img/lokasip.webp',
-                    imageWidth: 150,
-                    imageHeight: 150,
-                    imageAlt: 'Custom image',
+                    html: '<div class="custom-content"><img src="../../../../img/lokalov.webp" id="custom-image" alt="Custom image"><br><br><span class="custom-title">Your report has been submitted!</span></div>',
                     showConfirmButton: false,
-                    timer: 1500
+                    timer: 1500,
+                    customClass: {
+                        popup: 'custom-popup-class',
+                    },
                     })
                 })
             });
