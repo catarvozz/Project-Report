@@ -48,6 +48,9 @@
 				</div>
 			</div>
 		</div>
+		<footer class="fixed-bottom d-flex justify-content-center mb-5">
+        	<span>Copyright © Saloka 2023</span>
+		</footer>
 	</section>
 </body>
 </html>

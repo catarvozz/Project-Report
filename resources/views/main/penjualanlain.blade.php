@@ -69,7 +69,7 @@
                                 <td><input type="text" class="form-control col-3"></td>
                                 <td><input type="text" class="form-control col-3"></td>
                                 <td><input type="text" class="form-control col-3"></td>
-                                <td><button type="button" class="btn btn-success" id="smallsubmit">Submit</button></td>
+                                <td><button type="button" class="btn btn-warning text-white" id="smallsubmit">Submit</button></td>
                             </tr>
                         </tbody>
                             <tr>
@@ -89,9 +89,11 @@
             </div>
 
             <h4 id="title">SETORAN PENJUALAN LAIN</h4>
-            <div class="d-flex">
-                <label class="col">Kasir:</label>
-                <input type="text" class="form-control" id="kasir" value="Hafiz">
+            <div class="row">
+                <label class="col-auto">Kasir:</label>
+                <div class="col-3">
+                    <input type="text" class="form-control" id="kasir" value="Hafiz">
+                </div>
             </div>
             <!-- <div class="d-flex justify-content-end">
                 <div class="p-2 col-2">
@@ -138,19 +140,21 @@
                                 <tr>
                                     <td>50000</td>
                                     <td>Kertas</td>
-                                    <td>3</td>
-                                    <td>200000</td>
+                                    <td><input type="text" class="form-control col-2" value="3"></td>
+                                    <td>150000</td>
                                     <td><a class="btn btn-warning text-white btn-sm" id="edit"><i class="fa-solid fa-pen-to-square" id="smallpen"></i></a></td>
                                     <td><a class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can" id="smalltrash"></i></a></td>
                                 <tr>
                                 <tr>
                                     <th colspan="3">GRAND TOTAL</th>
-                                    <th>2000000</th>
-                                    <th></th>
+                                    <th colspan="3">20000</th>
                                 </tr> 
                             </form>
                         </tbody>
                     </table>
+                    <!-- <div class="text-right">
+                        <button type="button" class="btn btn-primary text-white smallsubmit" id="success">Submit</button>
+                    </div> -->
                 </div>
             </div>
 

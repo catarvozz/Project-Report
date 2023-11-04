@@ -3,30 +3,31 @@
 @section('container')
 <main class="content px-3 py-2">
     <div class="container-fluid">
-        <div class="d-flex justify-content-between align-items-center">
-            <h4 id="title">MASTER ITEM</h4>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
             <div class="d-flex">
-                <button class="btn btn-warning text-white dropdown-toggle mr-3" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <h4 class="mb-0" id="title">MASTER ITEMS</h4>
+            </div>
+            <div class="d-flex flex-row mt-3 mt-md-0">
+                <button class="btn btn-dark text-white dropdown-toggle mr-3" type="button" aria-expanded="false">
                     <i class="fa-solid fa-file-import"></i>
                 </button>
                 <div class="dropdown">
-                    <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-primary text-white dropdown-toggle" id="buttondownload" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-download"></i>
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Download as Excel</a></li>
-                        <li><a class="dropdown-item" href="#">Download as PDF</a></li>
+                        <li><a class= "dropdown-item" href="#">Download as PDF</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <div class="card">
             <div class="float-right">
                 <div class="input-group">
-                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" id="kolomsearch">
                     <button type="button" class="btn btn-outline-success mr-3 rounded"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <a href="{{ route('formmasteritems') }}" class="btn btn-success mr-3 rounded"><i class="fa-solid fa-plus"></i></a>  
+                    <a href="{{ route('formmasteritems') }}" class="btn btn-success mr-3 rounded"><i class="fa-solid fa-plus mt-1"></i></a>  
                 </div>
             </div>
 
@@ -57,8 +58,8 @@
                             <td>test</td>
                             <td>test</td>
                             <td>test</td>
-                            <td><a href="{{ route('formeditmasteritem') }}" class="btn btn-warning text-white btn-sm" id="edit"><i class="fa-solid fa-pen-to-square" id="smallpen"></i></a></td>
-                            <td><a class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can" id="smalltrash"></i></a></td>
+                            <td><a href="{{ route('formeditmasteritem') }}" class="btn btn-warning text-white" id="edit"><i class="fa-solid fa-pen-to-square" id="smallpen"></i></a></td>
+                            <td><a class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can" id="smalltrash"></i></a></td>
                         </tr>
                     </tbody>
                 </table>

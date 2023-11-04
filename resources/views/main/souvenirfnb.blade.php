@@ -37,39 +37,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="d-flex justify-content-between align-items-center">
-                <h4 class="mb-0" id="title">SOUVENIR & FNB REPORT</h4>
-                <div class="d-flex">
-                    <form action="" id="search-form" class="d-flex">
-                        <input type="date" class="form-control mr-3" id="date" name="date" />
-                        <select name="store" class="form-select mr-3" id="select-form">
-                                <option value="all" {{ $selectedStore == "all" ? 'selected' : '' }}>Choose...</option>
-                                <option value="VW Long FnB" {{ $selectedStore == "VW Long FnB" ? 'selected' : '' }}>VW Long FnB</option>
-                                <option value="Foodrsuck Ararya Kingdom" {{ $selectedStore == "Foodrsuck Ararya Kingdom" ? 'selected' : '' }}>Foodrsuck Ararya Kingdom</option>
-                                <option value="Daimami" {{ $selectedStore == "Daimami" ? 'selected' : '' }}>Daimami</option>
-                                <option value="Red Truck" {{ $selectedStore == "Red Truck" ? 'selected' : '' }}>Red Truck</option>
-                                <option value="Kedai Adu Tangkas FnB" {{ $selectedStore == "Kedai Adu Tangkas FnB" ? 'selected' : '' }}>Kedai Adu Tangkas FnB</option>
-                                <option value="Rimba Cafe" {{ $selectedStore == "Rimba Cafe" ? 'selected' : '' }}>Rimba Cafe</option>
-                                <option value="Jenju Cafe" {{ $selectedStore == "Jenju Cafe" ? 'selected' : '' }}>Jenju Cafe</option>
-                                <option value="Shop3" {{ $selectedStore == "Shop3" ? 'selected' : '' }}>Shop3</option>
-                                <option value="Shop4" {{ $selectedStore == "Shop4" ? 'selected' : '' }}>Shop4</option>
-                                <option value="Shop7" {{ $selectedStore == "Shop7" ? 'selected' : '' }}>Shop7</option>
-                                <option value="Chiclin" {{ $selectedStore == "Chiclin" ? 'selected' : '' }}>Chiclin</option>
-                        </select>
-                        <noscript><button type="submit"></button></noscript>
-                    </form>
-                    <div class="dropdown">
-                        <button class="btn btn-primary text-white dropdown-toggle" style="font-size:18px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-download"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Download as Excel</a></li>
-                            <li><a class="dropdown-item" href="#">Download as PDF</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
-
             <div class="card mb-5">
                 <div class="card-body table-responsive">
                     <table id="" class="table table-hover" cellspacing="0" width="100%">
@@ -113,10 +80,14 @@
             </div>
 
             <h4 id="title">SETORAN</h4>
-            <div class="d-flex">
-                <label class="col">Kasir:</label>
-                <input type="text" class="form-control" id="kasir" value="Hafiz">
+            <div class="row">
+                <label class="col-auto">Kasir:</label>
+                <div class="col-3">
+                    <input type="text" class="form-control" id="kasir" value="Hafiz">
+                </div>
             </div>
+
+
             <div class="card mb-5">
                 <div class="card-body table-responsive">
                     <table class="table table-hover">
@@ -137,7 +108,7 @@
                                     <td>{{$number++}}</td>
                                     <td>{{$setoransouvenirfnb-> uang_setoran}}</td>
                                     <td>{{$setoransouvenirfnb-> keterangan}}</td>
-                                    <td><input type="text" class="form-control" value="{{$setoransouvenirfnb-> jumlah}}"></td>
+                                    <td><input type="text" class="form-control col-2" value="{{$setoransouvenirfnb-> jumlah}}"></td>
                                     <td>{{$setoransouvenirfnb-> total}}</td>
                                     <td><a class="btn btn-warning text-white btn-sm" id="edit"><i class="fa-solid fa-pen-to-square" id="smallpen"></i></a></td>
                                     <td><a class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can" id="smalltrash"></i></a></td>
@@ -145,12 +116,14 @@
                                 @endforeach
                                 <tr>
                                     <th colspan="4">GRAND TOTAL</th>
-                                    <th>2000000</th>
-                                    <th></th>
+                                    <th colspan="3">2000000</th>
                                 </tr> 
                             </form>
                         </tbody>
                     </table>
+                    <!-- <div class="text-right">
+                        <button type="button" class="btn btn-primary text-white smallsubmit" id="success">Submit</button>
+                    </div> -->
                 </div>
             </div>
 

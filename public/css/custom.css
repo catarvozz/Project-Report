@@ -8,11 +8,11 @@
 body, html {
 	line-height: 1.8;
     font-family: 'Poppins';
-     color: black;
+    color: black;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	 margin:0px;
-     padding:0px;
+	margin:0px;
+    padding:0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +25,7 @@ tr, td {
 }
 
 .main-content {
-    background-color: #ffff;
+    background-color: #fffdfd;
     min-height: 100vh;
     height: 100%;
 }
@@ -320,7 +320,7 @@ a .fa-solid {
     font-size: 13px;
     padding: 10px 20px;
     margin: 0 5px;
-    border-radius: 2px;
+    /* border-radius: 2px; */
 	font-weight: 400;
     transition: all 150ms linear;
 }
@@ -383,7 +383,7 @@ footer {
     padding: 10px 0;
 	position:relative;
 	width:100%;
-    background-color: #ffff;
+    background-color: #fffdfd;
 }
 
 
@@ -649,6 +649,10 @@ tr #textcenter {
     height: 350px;
 }
 
+#kolomsearch {
+    height: 42px;
+}
+
 /* #redstrip {
     background-color: #f45049;
     color: white;
@@ -684,11 +688,10 @@ tr #textcenter {
         height: 40px;
         font-size: 12px;
     }
-    #buttondownload {
-        width: 40px;
-        height: 40px;
-    }
     .fa-download {
+        font-size: 17px;
+    }
+    .fa-import {
         font-size: 17px;
     }
     th, td {

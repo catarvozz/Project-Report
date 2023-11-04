@@ -9,9 +9,9 @@
                     <h4 class="mb-0" id="title">PENJUALAN TICKET REPORT</h4>
                 </div>
                 <div class="d-flex flex-row mt-3 mt-md-0">
-                    <form action="" id="search-form" class="d-flex">
+                    <!-- <form action="" id="search-form" class="d-flex">
                         <input type="date" class="form-control mr-2" id="date" name="date" />
-                    </form>
+                    </form> -->
                     <div class="dropdown">
                         <button class="btn btn-primary text-white dropdown-toggle" id="buttondownload" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-download"></i>

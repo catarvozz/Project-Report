@@ -109,7 +109,7 @@
                           </tr>
                           @endforeach
                           <tr>
-                            <th colspan="5">GRAND TOTAL</th>
+                            <th colspan="6">GRAND TOTAL</th>
                             <th>2000000</th>
                             <th></th>
                           </tr>

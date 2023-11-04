@@ -21,9 +21,9 @@
         <div class="card">
         <div class="float-right">
                 <div class="input-group">
-                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" id="kolomsearch">
                     <button type="button" class="btn btn-outline-success mr-3 rounded"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <a href="{{ route('formmasterkategori') }}" class="btn btn-success mr-3 rounded"><i class="fa-solid fa-plus"></i></a>  
+                    <a href="{{ route('formmasterkategori') }}" class="btn btn-success mr-3 rounded"><i class="fa-solid fa-plus mt-1"></i></a>  
                 </div>
             </div>
             <div class="card-body table-responsive">
@@ -39,8 +39,8 @@
                             <td>test</td>
                             <td>test</td>
                             <td>test</td>
-                            <td><a href="{{ route('formeditmasterkategori') }}" class="btn btn-warning text-white btn-sm" id="edit"><i class="fa-solid fa-pen-to-square" id="smallpen"></i></a></td>
-                            <td><a class="btn btn-danger text-white btn-sm" id="delete"><i class="fa-solid fa-trash-can" id="smalltrash"></i></a></td>
+                            <td style="max-width: 10px;"><a href="{{ route('formeditmasterkategori') }}" class="btn btn-warning text-white" id="edit"><i class="fa-solid fa-pen-to-square" id="smallpen"></i></a></td>
+                            <td style="max-width: 10px;"><a class="btn btn-danger text-white" id="delete"><i class="fa-solid fa-trash-can" id="smalltrash"></i></a></td>
                         </tr>
                     </tbody>
                 </table>
